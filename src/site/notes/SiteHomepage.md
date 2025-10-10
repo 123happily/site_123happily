@@ -4,4 +4,4 @@
 
 hey :)
 
-[[Lyrics/幽火 - Ghost Fire\|幽火 - Ghost Fire]]
+[[Lyrics/幽火-Ghost Fire\|幽火-Ghost Fire]]
