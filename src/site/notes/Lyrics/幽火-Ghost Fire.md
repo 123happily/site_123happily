@@ -86,3 +86,5 @@ There's a village with a silver mine looking to make a profit. They bring a youn
 The question remains whether you can kill a spirit, because I'm not sure why the townsfolk would push it off the cliff if you couldn't. There's also a potential reading that the spirit and the boy actually die together ('wait, let's go together') but I sort of doubt it. Not to mention that 'ayakashi' are specifically ghosts that appear floating over water or on beaches (https://en.wikipedia.org/wiki/Ayakashi_(y%C5%8Dkai)). They do seem to have a link to flames or fire, which might explain some of the lyrics in the song.
 
 A huge thank you to Archeia and JuriTea_ for the theory in the comments of the source Youtube video which helped point me in the right direction.
+
+It's worth mentioning that the composer, Kou, is no stranger to writing several songs in sequence that tell an overarching story. I'm not familiar enough with their work to tell if this is part of a broader narrative or not.
