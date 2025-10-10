@@ -83,4 +83,4 @@ There's a village with a silver mine looking to make a profit. They bring a youn
 { #1d979d}
 
 
-A huge thank you to Archeia and JuriTea_ for the theory in the comments of the source Youtube video which helped point me in the right direction. Their interpretation of it is really interesting and equally possible/valid.
+A huge thank you to Archeia and JuriTea_ for the theory in the comments of the source Youtube video which helped point me in the right direction. Their interpretation of it is really interesting and equally likely, to be honest.
