@@ -10,3 +10,7 @@ Hello! If you're looking for my translations, they're here:
 If you're here for the MCB report on cloud storage, you're lost, but it's here:
 
 [[ReportOnCloudSolutions\|ReportOnCloudSolutions]]
+
+If you're here looking for my thoughts on the Local Coffee Shop 6th Writing Competition entries, it's here:
+
+[[voting!\|voting!]]
