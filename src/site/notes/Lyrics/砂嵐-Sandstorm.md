@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Lyrics/砂嵐-Sandstorm/"}
+{"dg-publish":true,"permalink":"/Lyrics/砂嵐-Sandstorm/","created":"2025-12-27T17:22:07.162+10:30","updated":"2026-02-02T19:39:54.388+10:30"}
 ---
 
 #lyric

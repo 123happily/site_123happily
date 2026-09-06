@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Lyrics/雪が消えたら通ります-Once the snow disappears, I'll pass through/"}
+{"dg-publish":true,"permalink":"/Lyrics/雪が消えたら通ります-Once the snow disappears, I'll pass through/","created":"2025-12-27T17:22:07.162+10:30","updated":"2025-12-17T18:15:39.000+10:30"}
 ---
 
 #lyric

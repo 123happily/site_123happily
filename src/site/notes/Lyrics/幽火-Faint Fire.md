@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Lyrics/幽火-Faint Fire/"}
+{"dg-publish":true,"permalink":"/Lyrics/幽火-Faint Fire/","created":"2025-12-27T17:22:07.162+10:30","updated":"2025-10-11T10:37:44.000+10:30"}
 ---
 
 #lyric 

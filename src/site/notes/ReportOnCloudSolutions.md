@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/ReportOnCloudSolutions/"}
+{"dg-publish":true,"permalink":"/ReportOnCloudSolutions/","created":"2025-12-27T17:22:06.153+10:30","updated":"2025-10-27T15:35:57.000+10:30"}
 ---
 
 There are two main options suitable for MCB when it comes to a cloud storage solution.

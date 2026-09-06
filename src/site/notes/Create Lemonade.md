@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/Create Lemonade/"}
+{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-06T10:19:12.172+09:30"}
 ---
 
 Here's the wiki for Create Lemonade;
 It's also my main working document, you have my apologies for the mess.
 
-## Description/Pitch
+## Description/Pitch/Surface-level Credits
 
 CREATE: LEMONADE
 When life gives you lemons, create lemonade!
@@ -15,23 +15,33 @@ Minecraft players have developed tons of farms, cheeses, exploits, and more. The
 Key words: Automation, QoL, Vanilla-ish, Simplicity, Fun, Casual
 
 AI Declaration:
-Though I cannot speak for the contents of this modpack (i.e mods, resource packs, datapacks) I can clarify that I don't use AI (such as LLMs or image/video/audio generation models) in my works.
+Though I cannot speak for the contents of this modpack (i.e mods, resource packs, datapacks) I can clarify that I don't use AI content or coding (such as LLM output or image/video/audio generation models) in my works.
+My single use-case is using DeepSeek's free model to diagnose crash logs. I always read the relevant error first and do my own research before asking an LLM, which means I rarely have to resort to this method.
 
-Credits:
+Explicit Credits; full listing via the wiki page:
 Vanilla Tweaks: https://vanillatweaks.net/
-
+Title generator: https://ewanhowell.com/plugins/minecraft-title-generator/ ("Bubble" template texture modified with Photopea)
+Complementary Shaders: https://modrinth.com/shader/complementary-reimagined
 # Workings
 
 #### To-do/In Progress
 
-- [ ] I've started a credit.txt to store relevant licenses. It's needed for MIT things as well as Vanilla Tweaks should I use that.
-- [ ] add the 'unstable terrain' and 'MIN function' errors to the console spam blocker if continuing
-- [ ] have a squiz at the log for spamming things, i dont remember if i fixed the structure ones
+- [ ] Add MIT credits to the credit.txt? find out if i even need to for things stored on modrinth?
+- [ ] make the lantern hip slot a smaller proper lantern instead of the GIGACHAD BRICK it is rn lol
+- [ ] add more stupid log things to the log cleaner where suitable
 - [ ] I've disabled CliffTree's sky biomes for the meantime because it makes world previews difficult to see. I can probably re-enable these once i'm done using seed preview.
-- [ ] Finalise a pack description and unify it between here, modrinth, and github, making sure you include vanilla tweak's credit and a link to this page
-- [ ] Make a lemon-slice hunger bar sprite. Will be very easy. I've done it with Vanilla Tweaks as apples for now and as reference.
-- [ ] See if you can't make a custom tooltip texture too, again Vanilla Tweaks will show you the way
-- [ ] Look into how menu panoramas are made, or otherwise make your own static image.
+- [ ] Finalise a pack description and unify it between modrinth, and github, clearing it from here, making sure you include a link to this page and a credit explanation section
+- [ ] remake vanilla tweaks using website to take out twinkling stars, hunger apples, GUI buttons, and tooltip, and clean up the dupe file while you're there
+- [ ] Add overlay logic onto Create's blocks where it makes sense to do so (i.e tuff and deepslate gen next to ochrum...)
+- [ ] look into a decent PBR pack to pair with shaders, or dont fucking bother yknow
+- [ ] whatever resource pack manager mod you use, you should be able to make a preset or hide irrelevant packs or lock in packs or something, so do that
+- [ ] I'd like variations or at least random rotation of the ice texture for places like ice spikes.
+- [ ] make a suitable GUI for the crafter (not mission critical)
+- [ ] Continue and wrap up the biome colorations in my pack
+- [ ] fix up the create gui buttons to match the 26.2 format
+- [ ] make a suitable locator bar resource edit for the [gui](https://mcasset.cloud/26.2/assets/minecraft/textures/gui/sprites/hud) (idk how to test it lmao)
+- [ ] debate setting up very minor "lore" and a starting structure, like satisfactory.
+- [ ] maybe reinstate voxy worldgen on release even though it has the OOM bug. casual players are unlikely to run into it...
 
 #### Waiting for help
 
@@ -42,11 +52,15 @@ no action required in the meantime really
 voxy worldgen is on hold until fixed
 
 [Game close thread hang issue with Flywheel](https://github.com/ZurrTum/Create-Fly/issues/357)
-Until this is resolved, I will be implementing the mentioned workaround that disables GPU rendering, however I don't want to ship this modpack until a solution is found because of the 
-potential performance issues.
+Until this is resolved, I will be implementing the mentioned workaround that disables GPU rendering, however I don't want to ship this modpack until a solution is found because of the potential performance issues. when that happens, re-test shaders for compatibility.
 
-[Snowy leaves compat with rainbow leaves z fighting fix](https://github.com/Fabiofdez/Better-Snowy-Leaves/issues/6)
-Just waiting on the push!!!
+Snowy leaves mod not playing nice with world generation for some reason. the author is as befuddled as I am so it's probably something to just live with.
+
+fancymenu is shitting itself with Wakes. wait for wakes author to pony tf up and then reinstate it (may have to tell fancymenu guy to take away the incompat marker)
+
+I put in a bug report to ARTSHADE for the fusion overlay misbehaviour, they saw it, we wait and see.
+
+waiting for permission from dr7 (or no permission, depending) on using the 26.2 sodium port in the pack. if you spot them online, maybe ping them in the server.
 
 #### Problem Solving
 
@@ -83,45 +97,65 @@ grim situation though
 When you export from Prism, selecting the folders i.e mods, resourcepacks correctly converts them to Modrinth dependencies instead of packaging the raw files, or at least it does something close enough.
 
 I have to zip my datapack before distributing, but my resource pack seems to make it through unharmed, which is nice. Yeah basically it modrinth links everything it can and then adds anything it couldn't as files. Nice.
+
+### Pack Resource and Data Pack
+
+I can adjust biome-based sky, leaf, grass, and other foliage colors, and [more](https://github.com/MehVahdJukaar/polytone/wiki/Environment-Attributes), so it's probably ideal to keep track of what I've been up to...
+
+Oak leaves for some reason eats the biome-based simple configurations alive, so I can't really use a full colormap for those. Everything else is fair game though.
+
+I got permission to overwrite rainbow foliage's textures (see that section in aesthetics > rendering > leaves section for more information) so I'll be brightening leaves to have full control over their colour!
+
+I've also put leaf litter under the 'foliage color' map (which is mainly for oak) and decided by the biome property files. It just feels a bit easier. i can always go back and give it its own colormap if i give a shit later.
+
+TO DO:
+- update acacia, dark oak, jungle, mangrove textures to be 'bright'
+- change birch default to something slightly darker for sanity
+- set up their colormaps since we're knuckling down on this idea again
+- run through biomes and nail down looks for them, testing with all leaves and litter for anything horrendous
+- muck around with adding https://modrinth.com/mod/falling-leaves-plus which is better than subtle effects' in that it has leaf-type-specificity and high customisability and worse in that they don't land on water but I think we'll all be ok. they honestly still might if it works how i imagine.
+
+Clifftree's Snowy Old Growth Taiga is a frosty blue.
+Taiga is a rich green.
+
 ## mods i might throw in later
 
 I don't want realms but i'm gonna muck with the menu later so I'll be able to piss it off.
 
-https://modrinth.com/resourcepack/enchanting-table-magic-circle
-it's broken which is such a shame. probably fusion if i had to guess lol
+https://modrinth.com/resourcepack/capitalized-shaded-font
+Font alternative to vanilla tweaks
+
+os's colorful grasses are alright but also a bit much at times and hard to work with with extreme biome colorings. so...
+https://modrinth.com/resourcepack/rads-lush-foliage
+maybe we can hit it with a bit of this and a bit of
+https://modrinth.com/resourcepack/foliage-tint
+and a bit of
+https://modrinth.com/resourcepack/slightly-better-foliage-colors.
+
+https://modrinth.com/resourcepack/vanilla-exp/gallery has variated grass and hopefully the ability to turn most of the rest of the stuff off,
+
+https://modrinth.com/resourcepack/colorful-fleurs/gallery
+this might work with 
+https://modrinth.com/resourcepack/foliage-tint/gallery
+neither of which would work with https://modrinth.com/resourcepack/better-foliage/gallery which is pretty cool though. i wonder if it would spawn the same one for each 'cluster' (it will)
+
+https://modrinth.com/resourcepack/flower-clusters
+can't forget this!
+
+https://modrinth.com/resourcepack/more-nether-roots also...
+
+https://modrinth.com/resourcepack/createful-plaques
+
+https://modrinth.com/resourcepack/os-variated-glow-lichen
+would have to change vanilla tweaks so its not a 3d model in there anymore
 
 https://modrinth.com/mod/wikiful
 show pop-ups with handy info when the user finds an item, and add a menu-accessible wiki. handy to explain changes in the pack in-game, but might cause headaches with my create gui theming.
-
-https://vanillatweaks.net/terms/
-Wavy leaves doesn't work :(. note the specificity of the terms.
-![Pasted image 20260830135007.png](/img/user/Attachments/Pasted%20image%2020260830135007.png)this is all i could find in the modpack making discord, it's probably fine
-
-https://modrinth.com/resourcepack/fusion-stacking-items
-i like this, waiting to see if i even stick with fusion though
-https://modrinth.com/resourcepack/connected-paths-(fusion)
-https://modrinth.com/resourcepack/connected-bricks-(fusion)/gallery
-https://modrinth.com/resourcepack/connected-rocks-(fusion)/gallery
-overlays with fusion
-
-https://modrinth.com/resourcepack/fluffy-fancy-clouds
-https://modrinth.com/resourcepack/story-mode-clouds/gallery
-two options. second one can be edited a bit to be thicker.
-i should probably just use better clouds mod, but yknow.
 
 the thing to get wandering traders to go away lol
 
 https://www.planetminecraft.com/texture-pack/3d-breaking/
 this is so old there's no way right
-
-https://modrinth.com/mod/color-correction/gallery
-banger came up
-
-https://modrinth.com/mod/celestia-sky/gallery
-shooting stars. has a tiny gameplay thing and i'm unsure on the performance/if this would be added by other mods already.
-
-https://modrinth.com/mod/wavify/gallery
-im torn (this is the only one on this version btw) i'll try it and see
 
 https://modrinth.com/datapack/call-your-happy-ghast
 fym 'needs cheats to work'. test.
@@ -137,10 +171,7 @@ https://modrinth.com/mod/instant-xp-gain
 one of these. the former is probably heavier but more widely compatible and less confusing so i'm leaning towards that
 
 https://modrinth.com/mod/appleskin
-should probably just do this even if i dont like the exhaustion bar
-
-https://modrinth.com/datapack/trinkets-lantern-support
-handy, and lets me rule out fullbright without harming gameplay
+should probably just do this even if i dont like the exhaustion bar... vanilla tweaks has a food refill indication though which is simple enough i think
 
 https://modrinth.com/datapack/low-end-gravity
 kinda a wicked idea for something with 6 fucking downloads
@@ -291,12 +322,48 @@ Type: Mod
 License: ARR
 Purpose in Pack: Prompts fences, walls, glass panes, and bars to connect to more non-solid or partial blocks like banners and signs.
 Status: Added
+*Doesn't work with Create's building blocks, this is a 'better than nothing' situation*
 
 [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks)
 Author: YaLTeR
 Type: Mod
 License: BSD-3-Clause
 Purpose in Pack: Add many QoL features to mouse inventory interactions
+Status: Added
+
+[Trinkets Updated](https://modrinth.com/mod/trinkets-updated)
+Author: Patbox
+Type: Mod
+License: MIT
+Purpose in Pack: Allow the use of trinket slots
+Status: Added
+
+[Trinkets Lantern Support](https://modrinth.com/datapack/trinkets-lantern-support)
+Author: Patbox
+Type: Mod
+License: MIT
+Purpose in Pack: Let you hang lanterns on your hip to make full use of Dynamic Lights.
+Status: Added
+
+[Ok Zoomer](https://modrinth.com/mod/ok-zoomer)
+Author: Ennui
+Type: Mod
+License: ARR
+Purpose in Pack: Highly configurable zoom mod. Will be gated to the posession of a spyglass and used with the following mod.
+Status: Added
+
+[Ok Zoomer Spyglass Slot](https://modrinth.com/mod/spyglass-trinket-slot)
+Author: MinecraftGuy926
+Type: Mod
+License: MIT
+Purpose in Pack: Gives you a spot to hold your spyglass
+Status: Added
+
+[Trinkets Elytra](https://modrinth.com/datapack/trinkets-elytra)
+Author: greezlu
+Type: Mod
+License: MIT
+Purpose in Pack: Let you wear a chestplate and elytra at the same time.
 Status: Added
 
 ## Aesthetics
@@ -306,16 +373,17 @@ Status: Added
 [Fancy Menu](https://modrinth.com/mod/fancymenu)
 Author: Keksuccino
 Type: Mod
-License: DSMSLv3
-Purpose in Pack: To allow the creation of custom Main and Pause menu screens.
-Status: Planned
+License: DSMSLv3.1
+Purpose in Pack: Allow extensive customisation of the main menu (and more!)
+Status: Added
 
-[Drippy Loading Screen](https://modrinth.com/mod/drippy-loading-screen)
+[SpiffyHUD](https://modrinth.com/mod/spiffyhud)
 Author: Keksuccino
 Type: Mod
-License: DSMSLv3
-Purpose in Pack: To further customise the loading screen, as an extension of Fancy Menu.
-Status: Planned
+License: DSMSLv3.1
+Purpose in Pack: Allow extensive customisation of the in-game hud
+Status: Added
+*This doesn't work with the improved hotbar mod, but Raised doesn't work with FancyMenu, so I sort of have to choose one or the other. I've just left this disabled for now.*
 
 [Inventory Blur](https://modrinth.com/mod/inventory-blur)
 Author: enchanted-games
@@ -339,19 +407,19 @@ License: MIT
 Purpose in Pack: Improve and spice up the hotbar
 Status: Added
 
+[Fresh Hearts](https://modrinth.com/resourcepack/fresh-hearts)
+Author: navzary
+Type: Resource Pack
+License: ARR
+Purpose in Pack: Make the hearts look a little nicer
+Status: Added
+
 [Hidden Recipe Book](https://modrinth.com/mod/hidden-recipe-book)
 Author: Serilium
 Type: Mod
 License: ARR
 Purpose in Pack: Hide the unneeded recipe book to encourage use of JEI!
 Status: Planned
-
-[Raised](https://modrinth.com/mod/raised)
-Author: yurisuika
-Type: Mod
-License: LGPL-3.0-or-later
-Purpose in Pack: Lifts the hotbar off the bottom of the screen.
-Status: Added
 
 [Clearer Slot Highlight](https://modrinth.com/resourcepack/clearer-slot-highlight)
 Author: blockerlocker
@@ -599,13 +667,27 @@ Type: Resource Pack
 License: CC-BY-NC-4.0
 Purpose in Pack: Add some fun animations to various items in the inventory.
 Status: Added
-##### **Emissive**
+##### **Emission, Shading and Lighting**
 
 [Fresh Animations: Emissive](https://modrinth.com/resourcepack/fresh-animations-emissive)
 Author: FreshLX
 Type: Resource Pack/Mod/Other
 License: (Custom Terms of Use) + Explicit Modpack Permission Given
 Purpose in Pack: Add glowing textures to some mobs
+Status: Added
+
+[LambDynamicLights](https://modrinth.com/mod/lambdynamiclights)
+Author: LambdAurora
+Type: Mod
+License: Lambda License
+Purpose in Pack: Make glowing blocks cast light around them
+Status: Added
+
+[Sunbathing Godrays](https://modrinth.com/resourcepack/sunbathing-godrays)
+Author: MedVahdJukaar, BeagleNF404
+Type: Resource Pack
+License: MIT
+Purpose in Pack: Add godrays even when shaders aren't enabled
 Status: Added
 
 ##### **Overlays, Variations, and Connected Textures**
@@ -617,6 +699,13 @@ Type: Resource Pack
 License: MIT
 Purpose in Pack: Add smooth and creative overlays between blocks.
 Status: Added + Tweaked with a pack loaded on top for compat reasons
+
+[Connected Bricks (Fusion)](https://modrinth.com/resourcepack/connected-bricks-(fusion)/gallery)
+Author: Jacosvaldo
+Type: Resource Pack
+License: CC-BY-NC-SA-4.0
+Purpose in Pack: Make bricks overlap each other nicely
+Status: Added
 ##### **Mobs**
 
 [3D Harnesses x Fresh Animations](https://modrinth.com/resourcepack/3d-harnesses-x-fresh-animations)
@@ -714,7 +803,8 @@ Type: Resource Pack
 License: ARR
 Purpose in Pack: Improve the fluffy look of leaves without significant performance impacts.
 Status: Added
-*Load under the Better Snowy Leaves pack's mod resource for compatibility*
+*Selected brightened versions of some textures overwritten with the pack's resource pack with permission!*
+![Pasted image 20260902180814.png](/img/user/Attachments/Pasted%20image%2020260902180814.png)
 
 [Simple Grass Flowers](https://modrinth.com/resourcepack/simple-grass-flowers)
 Author: 2DWisp
@@ -758,6 +848,14 @@ Type: Resource Pack
 License: ARR
 Purpose in Pack: Make sunflowers look huge and golden
 Status: Added
+
+[Val's Leaf Litter](https://modrinth.com/resourcepack/vals-leaf-litter)
+Author: legovideosrock
+Type: Resource Pack
+License: ARR
+Purpose in Pack: Make leaf litter less obviously tiled
+Status: Added
+*You might notice that leaf litter follows biome colour - that's actually my pack sitting on top and changing the colormap with Polytone!*
 ##### **Create**
 
 [Create Ultra](https://modrinth.com/resourcepack/create-ultra-pbr)
@@ -813,6 +911,56 @@ Purpose in Pack: Provide various texture-related fixes and tweaks!
 Status: Added, may be tweaked/re-downloaded in future
 *By default this will be loaded lowest to avoid compatability issues - it just does so much!*
 
+[Better Entity Shadow](https://modrinth.com/resourcepack/better-shadow-entity!)
+Author: NelA470
+Type: Resource Pack
+License: CC-BY-NC-ND-4.0
+Purpose in Pack: Make entity shadows squared instead of round
+Status: Added
+
+[Better Clouds](https://modrinth.com/mod/better-clouds)
+Author: qendolin
+Type: Mod
+License: MPL-2.0
+Purpose in Pack: Improve the look of clouds by making them dynamic and fluffy whilst still keeping a blocky style.
+Status: Added
+
+[Cosmos](https://modrinth.com/mod/cosmos-mod)
+Author: Hollowed, TheTyphothanian
+Type: Mod
+License: ARR
+Purpose in Pack: Improve the night sky and add a north star.
+Status: Added
+
+#### **Shaders**
+*Focused on gameplay with a requirement of stable 60FPS on my system in ideal conditions (standing still in a plains biome). These have been configured for a Vanilla/Dungeons inspired look.*
+==Note: Rainbow's Foliage causes decent performance hits with shaders enabled.==
+Some of these shaders may be tossed to the wayside at a later date because of a lack of Colorwheel support.
+
+[Complementary Shaders](https://modrinth.com/shader/complementary-reimagined) with [Euphoria Patches](https://modrinth.com/mod/euphoria-patches)
+*Complementary*
+Author: EminGT
+Type: Shaderpack
+License: Custom + Permission with Credit Granted
+Purpose in Pack: Provide high-end, customisable visuals
+Status: Added
+
+*Euphoria*
+Author: SpacEagle17
+Type: Mod
+License: MPL-2.0
+Purpose in Pack: Allow further customisation and features
+Status: Added
+
+here's where i'd put my artshade... RAGH
+
+[BSL](https://modrinth.com/shader/bsl-shaders)
+Author: CaptTatsu
+Type: Shaderpack
+License: ARR
+Purpose in Pack: A bright, fun look.
+Status: Added
+*You will want to disable Better Clouds in the mod menu in-game! BSL also doesn't respect Clifftree's custom sky colours, so it may make biomes feel more same-y. It's just here to give you another option if you'd like.*
 ## World Generation
 *Changes to terrain and biomes, without adding any modded blocks or items, keeping a vanilla-ish feel. Currently in heavy / messy development.*
 
@@ -849,7 +997,7 @@ Author: nice.john
 Type: Mod
 License: ARR
 Purpose in Pack: Add differing-height lakes and flowing streams and rivers.
-Status: HOLD
+Status: Added
 
 [Landmarks](https://modrinth.com/mod/landmarks)
 Author: orlouge
@@ -875,8 +1023,7 @@ License: Custom License + Modpack Permission Explicitly Given
 Purpose in Pack: Lets you dye spore blossoms and the particles they produce, great for builders wanting to tweak atmosphere.
 Status: Planned
 ## Performance/BugFixes/Utility/Other
-*The boring stuff that keeps it all working under the hood. I won't document the dependencies in this pack*
-
+*The boring stuff that keeps it all working under the hood. I won't document the dependencies in this pack.*
 #### **Performance :LiBadgeCheck:**
 *A quick benchmark, with no other mods, at 10 render distance gets ~800 FPS on my 3060 mid-high range system. This is satisfactory enough for me to continue development off of this standard.*
 
@@ -909,6 +1056,13 @@ License: LGPL-3.0-only
 Purpose in Pack: Improve HUD rendering by smartly dropping HUD framerate. 
 Status: Added
 
+[ScalableLux](https://modrinth.com/mod/scalablelux)
+Author: ishland
+Type: Mod
+License: LGPL-3.0-only
+Purpose in Pack: Actually to reduce bottlenecking on new chunk generation.
+Status: Added
+
 [FerriteCore](https://modrinth.com/mod/ferrite-core)
 Author: malte0811
 Type: Mod
@@ -928,6 +1082,28 @@ Author: Reverie Projects, ZenXArch
 Type: Mod
 License: MPL-2.0
 Purpose in Pack: Slight improvements to chunk generation speed, with Vanilla and Modded worldgen parity.
+Status: Added
+
+[C2ME](https://modrinth.com/mod/c2me-fabric)
+Author: ishland, duplexsystem
+Type: Mod
+License: ARR
+Purpose in Pack: Greatly speed up world generation by using multiple CPU cores.
+Status: Added
+
+[C2ME OpenCL Acceleration Module](https://modrinth.com/mod/c2me-ocl)
+Author: ishland
+Type: Mod
+License: ARR
+Purpose in Pack: Utilise the GPU on certain systems to aid C2ME's chunk generation boost.
+Status: Added
+*This depends heavily on your system setup. I'm as of yet undecided if this should go in the full release; I'm unsure how it responds to incompatible setups.
+
+[Structure Layout Optimizer](https://modrinth.com/mod/structure-layout-optimizer)
+Author: TelepathicGrunt
+Type: Mod
+License: MIT
+Purpose in Pack: Speed up structure generation.
 Status: Added
 
 [Ixeris](https://modrinth.com/mod/ixeris)
@@ -1052,13 +1228,6 @@ Type: Mod
 License: MIT
 Purpose in Pack: Help to manage resource packs.
 Status: Added
-
-[Configured](https://www.curseforge.com/minecraft/mc-mods/configured)
-Author: MrCrayfish
-Type: Mod
-License: GNU Lesser General Public License (Specifically allows for inclusion in Modrinth Modpacks!)
-Purpose in Pack: Allow configuration of the JEI menu from in-game, mainly.
-Status: HOLD (Currently doesn't support JEI on newer versions for some reason)
 #### **Game Tweaking**
 
 [Featurify](https://modrinth.com/mod/featurify)
@@ -1115,20 +1284,32 @@ I'm unsure of stability and compatability with other mods in this pack. Feel fre
 [Packet Fixer](https://modrinth.com/mod/packet-fixer) and similar network stack improvements
 I don't have friends to test whether this modpack performs well in multiplayer; you're welcome to add these kinds of mods if you like.
 
-[Scalable Lux](https://modrinth.com/mod/scalablelux)
-According to the devs, though it still has performance improvements over Vanilla, it isn't as severe as it used to be and isn't as needed on client anymore. I'm aware that in singleplayer you are simultaneously the server and the client, so if you think this would help, go for it, it looks well maintained.
-
 [Inventory Particles](https://modrinth.com/mod/inventory-particles)
 I just think it's too distracting, I've tried turning down the particle counts but then they sort of come out of nowhere. You're welcome to include it, it's a well-made mod.
 
 [Particle Interactions](https://modrinth.com/mod/particle-interactions/gallery)
 Causes Particle Rain's rain to disappear for some reason.
 
-[Distant Thunders](https://modrinth.com/mod/distant-thunders)
-aside from some versioning issues at time of writing, Cool Rain includes some wicked thunder sounds that probably work better for low-render-distance setups like this one.
-
 [Nvidium](https://modrinth.com/mod/nvidium)
-Though it does seem to work, I didn't want to include it in case the end user wasn't using a Nvidia GPU (and I wasn't seeing such shocking frame increases to convince me otherwise).
+I wasn't seeing such shocking frame increases to risk potentially upsetting a non-Nvidia user. c2me OpenGL's impact is much greater so it *is* included for now despite card-specific requirements.
 
 [Nature's Compass](https://modrinth.com/mod/natures-compass)
 The UI doesn't mesh with the vision I have for this pack, though I agree that this functionality could be very helpful. I'll keep an eye out for alternatives.
+
+[Wavify](https://modrinth.com/mod/wavify/gallery)
+They flow upstream sadly
+
+## Extra Credits
+*I didn't end up using these things, or assets from these things, in the modpack, but I used them for reference, or wanted to give shoutouts...!*
+
+https://modrinth.com/resourcepack/ashen-trinkets-support
+For guidance/reference on how to customise the trinket slots
+
+https://modrinth.com/resourcepack/create-style-interface
+I used this style/palette as guidance/reference for some more textures to keep everything organised :)
+
+https://modrinth.com/resourcepack/dark-coffe-gui
+For guidance/reference on how to get GUI resource packs to work properly on 26.2
+
+https://modrinth.com/resourcepack/elytra-slot-retexture
+For the idea more than anything :)

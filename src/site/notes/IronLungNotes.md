@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/IronLungNotes/"}
+{"dg-publish":true,"permalink":"/IronLungNotes/","created":"2026-08-01T09:57:47.983+09:30","updated":"2026-02-12T16:33:26.000+10:30"}
 ---
 
 [[formum\|formum]]
