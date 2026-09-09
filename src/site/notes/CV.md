@@ -1,11 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/CV/","hide":true,"dgShowInlineTitle":true,"dgShowToc":true,"created":"2026-09-06T10:04:04.250+09:30","updated":"2026-09-09T14:54:38.220+09:30"}
+{"dg-publish":true,"permalink":"/CV/","hide":true,"dgShowInlineTitle":true,"dgShowToc":true,"created":"2026-09-06T10:04:04.250+09:30","updated":"2026-09-09T14:56:37.812+09:30"}
 ---
 
 # Welcome
 
-Hello! You've made it to my online CV. This website is a collection of my various skills and fields of experience, with links to my works across the internet. You can use the table of contents to jump to various sections <font size=2>(This doesn't show on mobile devices)</font>, or scroll down to see them all.
-
+Hello! You've made it to my online CV. This website is a collection of my various skills and fields of experience, with links to my works across the internet.
 ### IT Skills and Support
 I have strong tech skills across Windows, MacOS, iOS, and Linux. I'm quick to adapt to new software and have experience with bugtesting both websites and programs. I'm familiar with Github, building from source, cross-platform software emulation, self-hosted services, and building and repairing PCs and laptops. My truest skill in this arena is my ability to think critically, understand issues, and find useful advice both on the internet and by reaching out to experts. I combine this with my breadth of knowledge and never-ending interest to create, teach, and have fun.
 
