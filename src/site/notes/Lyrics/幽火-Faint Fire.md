@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Lyrics/幽火-Faint Fire/","created":"2025-12-27T17:22:07.162+10:30","updated":"2025-10-11T10:37:44.000+10:30"}
+{"dg-publish":true,"permalink":"/Lyrics/幽火-Faint Fire/","created":"2025-12-27T17:22:07.162+10:30","updated":"2026-09-07T10:26:55.681+09:30"}
 ---
 
 #lyric 
@@ -83,7 +83,7 @@ There's a village with a silver mine looking to make a profit. There's a young b
 { #1d979d}
 
 
-The question remains whether you can kill a spirit, because I'm not sure why the townsfolk would push it off the cliff if you couldn't. There's also a potential reading that the spirit and the boy actually die together ('wait, let's go together') but I sort of doubt it. Not to mention that 'ayakashi' are specifically ghosts that appear floating over water or on beaches (https://en.wikipedia.org/wiki/Ayakashi_(y%C5%8Dkai)). "Ayakashi are said to be the vengeful spirits of those who died at sea and that they are attempting to capture more people to join them." This is probably the most relevant part to this song. They also have a link to flames or fire.
+The question remains whether you can kill a spirit, because I'm not sure why the townsfolk would push it off the cliff if you couldn't. Perhaps the spirit tricked them with some kind of illusion, pretending to be the young boy, but that begets the question why the young boy jumped after the spirit. There's also a potential reading that the spirit and the boy actually die together ('wait, let's go together') but I personally doubt it. Not to mention that 'ayakashi' are specifically ghosts that appear floating over water or on beaches (https://en.wikipedia.org/wiki/Ayakashi_(y%C5%8Dkai)). "Ayakashi are said to be the vengeful spirits of those who died at sea and that they are attempting to capture more people to join them." They also have a link to flames or fire.
 
 A huge thank you to Archeia and JuriTea_ for the theory in the comments of the source Youtube video which helped point me in the right direction.
 

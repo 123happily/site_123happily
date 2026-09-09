@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-06T10:19:12.172+09:30"}
+{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-07T22:44:53.000+09:30"}
 ---
 
 Here's the wiki for Create Lemonade;
@@ -10,9 +10,9 @@ It's also my main working document, you have my apologies for the mess.
 CREATE: LEMONADE
 When life gives you lemons, create lemonade!
 
-Minecraft players have developed tons of farms, cheeses, exploits, and more. These allow you great progression, but can make the game feel aesthetically and logically incoherent. I don't want to use these techniques, but I don't want to play the 'hard' way either! This modpack aims to reduce the need for these exploits by offering alternatives, not trying to ban or nerf them. It leverages Create's fantastic design and many other gameplay tweaks to focus on factory building and expansion, with most typical challenges of Minecraft's (questionably balanced) gameplay removed. It's heavily inspired by Satisfactory; the focus is on automation, building, and relaxing through easy progression rather than PvE, punishing losses, or hardcore challenges.
+Minecraft players have developed tons of farms, cheeses, exploits, and more. These allow you great progression, but game feel aesthetically and logically incoherent. I don't want to use these techniques, but I don't want to play the 'hard' way either! This modpack aims to reduce the need for these exploits by offering alternatives, not by banning or nerfing them. It forefronts Create's fantastic design alongside many other gameplay tweaks to focus on factory building and expansion. It removes most typical challenges of Minecraft's gameplay - this is not a challenging modpack! It's heavily inspired by Satisfactory's game balance; the focus is on automation, building, and relaxing through easy progression rather than PvE, punishing losses, or difficult challenges.
 
-Key words: Automation, QoL, Vanilla-ish, Simplicity, Fun, Casual
+Key words: QoL, Vanilla Aesthetic, Simple, Fun, Casual
 
 AI Declaration:
 Though I cannot speak for the contents of this modpack (i.e mods, resource packs, datapacks) I can clarify that I don't use AI content or coding (such as LLM output or image/video/audio generation models) in my works.
@@ -23,6 +23,10 @@ Vanilla Tweaks: https://vanillatweaks.net/
 Title generator: https://ewanhowell.com/plugins/minecraft-title-generator/ ("Bubble" template texture modified with Photopea)
 Complementary Shaders: https://modrinth.com/shader/complementary-reimagined
 # Workings
+
+'crumb' shader has... potential as a really low end friendly thing, but i might actually use lumalight over this, its just impossible to tell what the settings do
+lumalight crashes for some reason tho lmao its not that good looking either
+i'm just missing rimlight and bloom in the base game... sighhh
 
 #### To-do/In Progress
 
@@ -106,7 +110,7 @@ Oak leaves for some reason eats the biome-based simple configurations alive, so 
 
 I got permission to overwrite rainbow foliage's textures (see that section in aesthetics > rendering > leaves section for more information) so I'll be brightening leaves to have full control over their colour!
 
-I've also put leaf litter under the 'foliage color' map (which is mainly for oak) and decided by the biome property files. It just feels a bit easier. i can always go back and give it its own colormap if i give a shit later.
+I've also put leaf litter under the 'foliage color' map (which is mainly for oak) decided by the biome property files. It just feels a bit easier. i can always go back and give it its own colormap if i give a shit later.
 
 TO DO:
 - update acacia, dark oak, jungle, mangrove textures to be 'bright'
@@ -122,8 +126,10 @@ Taiga is a rich green.
 
 I don't want realms but i'm gonna muck with the menu later so I'll be able to piss it off.
 
-https://modrinth.com/resourcepack/capitalized-shaded-font
-Font alternative to vanilla tweaks
+https://modrinth.com/mod/fancy-toasts
+alternative to advancement plaques. you can do custom textures, i probably would want to given the "best" one is actually a terraria themed thing lol
+https://modrinth.com/resourcepack/createful-plaques
+if i go with advancement plaques
 
 os's colorful grasses are alright but also a bit much at times and hard to work with with extreme biome colorings. so...
 https://modrinth.com/resourcepack/rads-lush-foliage
@@ -144,8 +150,6 @@ can't forget this!
 
 https://modrinth.com/resourcepack/more-nether-roots also...
 
-https://modrinth.com/resourcepack/createful-plaques
-
 https://modrinth.com/resourcepack/os-variated-glow-lichen
 would have to change vanilla tweaks so its not a 3d model in there anymore
 
@@ -162,16 +166,11 @@ fym 'needs cheats to work'. test.
 
 https://modrinth.com/mod/not-enough-pots/gallery
 this is doing *too much* but i cant find anything better
-
-https://modrinth.com/resourcepack/white-leavesgrass-in-snow-biomes-winter-foliage
-could be cool.
+i swear i saw one for builders and didnt write it down noooo
 
 https://modrinth.com/datapack/simple-homing-xp
 https://modrinth.com/mod/instant-xp-gain
 one of these. the former is probably heavier but more widely compatible and less confusing so i'm leaning towards that
-
-https://modrinth.com/mod/appleskin
-should probably just do this even if i dont like the exhaustion bar... vanilla tweaks has a food refill indication though which is simple enough i think
 
 https://modrinth.com/datapack/low-end-gravity
 kinda a wicked idea for something with 6 fucking downloads
@@ -182,20 +181,11 @@ https://modrinth.com/mod/sleep-warp-updated
 it'd be great if these all worked together. Betterdays i would use to make days and nights much longer. sleep warp properly ticks things overnight which should play nice with create one hopes. the day counter is just really cute.
 apparently sleepwarp breaks the formatting of fusz mods config screen text??? lmao. anyway
 
-https://modrinth.com/mod/better-advancements
-just seems worth it
-
 https://modrinth.com/mod/reliable-requiem
 VERY comprehensive death penalty- WHOAH. penalties-upon-death mod
 
 https://www.curseforge.com/minecraft/mc-mods/modest-magic
 an option for enchantments...
-
-https://modrinth.com/resourcepack/shadify
-might be handy?
-
-https://modrinth.com/resourcepack/vanilla-exp/gallery
-some cool things, some unneeded things, configurable with respackopts anyhow.
 
 https://modrinth.com/mod/shadeandsaturation/gallery
 could be handy
@@ -219,36 +209,54 @@ if i care
 https://modrinth.com/mod/datapack-injector
 mm
 
-https://modrinth.com/mod/bathymetry
-looks sick. intelligently changes water surface colour based on depth.
-
+purpur packs go
+[Copper Block Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-copper-block-beacon-base)  
+[Blasting Smelts Glass [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-blasting-smelts-glass)  
+[Axe Effective Skulls [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-axe-effective-skulls)  
+[Silk Touch Reinforced Deepslate [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-silk-touch-reinforced-deepslate)  
+[Rebalanced Piglin Bartering [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-rebalanced-piglin-bartering)  
+[Axolotls Ignore Passives [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-axolotls-ignore-passives)  
+[Redstone Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-redstone-beacon-base)  
+[Lapis Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-lapis-beacon-base)  
+[Amethyst Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-amethyst-beacon-base)  
+[Looting Shears [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-looting-shears)  
+[[PurpurPack] Stonecutter Cuts Wood - Slabs and Stairs - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-slabs)  
+[[PurpurPack] Stonecutter Cuts Wood - Doors and Trapdoors - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-doors)  
+[Stonecutter Buttons and Pressure Plates [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-buttons)  
+[Silk Touch Budding Amethyst [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-silk-touch-budding-amethyst)  
+[Pickaxe Effective Reinforced Deepslate [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-reinforced-deepslate)  
+[Pickaxe Effective Glass [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-glass)  
+[Pickaxe Effective Light Source Blocks [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-light-source-blocks)  
+[Hoe Effective Cactus [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-hoe-effective-cactus)  
+[Transparent Blocks In Enchant Area [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-transparent-blocks-in-enchant-area)  
+[Breed Axolotl With Tropical Fish Item [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-breed-axolotl-with-tropical-fish-item)  
+[Hoe Effective Froglights [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-hoe-effective-froglights)
 ## thoughts
 
 I do want to enable the automation of *most stuff* in the game through either Create or non-ugly Vanilla methods. That means getting a full list of items and blocks (including create's) and culling it down - first removing anything that's just a combination of other stuff, and then interrogating the sources of the remaining stuff.
 
-in terms of visuals, I don't want to give up on the idea of a shaders + non-shaders approach. I suppose I could make two versions of the pack, but that makes it difficult to update things. There isn't a quick toggling mod that can do what i need. i could maybe distribute an alternative sodium-options json somehow, though the instructions will doubtless be as complicated as doing it manually.
-So what *do* I need to do manually?
-Well... I need to toggle shaders, toggle brightness. Ideally that's all. let's build out the non-shader version of this, then add shaders, and see if anything else crops up that needs fiddling with.
-
 featurify hopefully lets you disable pockets of lava in the nether.
 
-you'll wanna mess with the config for the health mod and see if enchanting items loses you hearts. if it does, that's lame and i dont like it.
+I'd like to use the difficulties a bit smarter...
 
 also maybe grab something to balance mobs. i'm thinking:
 no surface mob spawns, only caves/under blocks
-less spawning in general
+limit to spawning in an area...?
 weaker skeletons
 weaker baby zombies
 weaker vexes
+alternative sources of some drops
 
-i'm not done fixing snow. snow on stairs and slabs would be great. snow settings might help here.
+i'm not done fixing snow. snow on stairs and slabs would be great. snow settings might help here. even snow on grass, somehow.
 
-the issue with completely disabling the end is the access to certain items/resources. end stone, chorus fruit, purpur, dragon egg, dragon head, and of course the big ones being shulkers and elytra.
-So instead I might want to make the end less of a headache. not dying in the void is a start, but i'm not sure if that mod is ideal cause i think you can get softlocked LMAO you could try 'NoVoid' instead which is the same idea.
+I  want to make the end less of a headache. not dying in the void is a start, but i'm not sure if that mod is ideal cause i think you can get softlocked LMAO you could try 'NoVoid' instead which is the same idea.
 otherwise increasing the rarity of end cities with structurify
 shulker drops two and respawning shulkers - make the former a guaranteed 2 drop and the latter a very long timer. this makes getting shulker boxes much easier.
 some tweaks to the elytra to make it less OP for long distances might be good. there's just more support for it out there. i think i'll put elytra bounce, airbrake, and a rocket debuff on it with elytra tuning
 then it can be visually improved with contrails and trims and physics and bonk mod lmao
+
+Enchanting is getting an overhaul... enchancement is seemingly alright with some config though i've had issues with its simultaneous enchantment cap. I'd like it to be 2... if only cause there's a lot of inventory clutter otherwise.
+easy magic lets you put decoration around the table and keeps items in it with a cool graphic... idk if it'll work, we'll see. [this](https://modrinth.com/datapack/purpurpacks-transparent-blocks-in-enchant-area) is an alternative
 
 # Modules
 ### Info
@@ -435,6 +443,13 @@ License: Dont Be a Jerk
 Purpose in Pack: Improves the Advancements menu, which (pending some drastic changes) will be the main progression guide in this modpack.
 Status: Added
 
+[Plane Advancements](https://modrinth.com/mod/plane-advancements)
+Author: Nettakrim
+Type: Mod
+License: LGPL-3.0-only
+Purpose in Pack: Change the layout of advancements to avoid a strange bug where Create's went off-screen + add some cool dynamic mind-map dynamics to them.
+Status: Added
+
 [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair)
 Author: Crendgrim
 Type: Mod
@@ -455,7 +470,7 @@ Type: Resource Pack
 License: ARR
 Purpose in Pack: Unify the Vanilla interfaces to be Create-themed.
 Status: Added
-> [(Possible Alternative)](https://modrinth.com/resourcepack/create-gui/gallery)
+*Many assets required copy-pasting into the modpack's resource pack to work on 26.2. I'm not sure why. If someone knows, I'd like to let the original pack set the textures, but for now this is the best I can do.*
 
 [Reliable Recount](https://modrinth.com/mod/o123456789-backport)
 Author: evanbones
@@ -463,7 +478,7 @@ Type: Mod
 License: GPL-3.0-or-later
 Purpose in Pack: Styles item numbers in Create's format/font
 Status: Added
-*Kindly ported to 26.2 upon request!*
+*Kindly updated to 26.2 from my request!*
 
 [VUL's Create Cursors](https://modrinth.com/resourcepack/vuls-create-cursors)
 Author: avizvul42
@@ -471,7 +486,13 @@ Type: Resource Pack
 License: MIT
 Purpose in Pack: Change the cursor to be Create-themed. Ported to work with Cursors Extended on 26.2 using [this tool](https://fishstiz.github.io/cursors_extended-wiki/tools/#v3-converter).
 Status: Added
-> [(Possible Alternative 1)](https://modrinth.com/resourcepack/create-brass-style-cursors), [(Possible Alternative 2)](https://modrinth.com/resourcepack/nerfs-fancy-cursor)
+
+[Capitalized Shaded Font](https://modrinth.com/resourcepack/capitalized-shaded-font)
+Author: NOEMA, Ferrlius, medn1y
+Type: Resource Pack
+License: ARR
+Purpose in Pack: Adds a really nice font.
+Status: Added
 
 #### **Sounds** :LiBadgeCheck: 
 
@@ -932,6 +953,13 @@ License: ARR
 Purpose in Pack: Improve the night sky and add a north star.
 Status: Added
 
+[Bathymetry](https://modrinth.com/mod/bathymetry)
+Author: ZipeStudio
+Type: Mod
+License: CC-BY-ND-4.0
+Purpose in Pack: Changes the water surface colour based on the depth of the water. Makes oceans look less flat.
+Status: Added
+
 #### **Shaders**
 *Focused on gameplay with a requirement of stable 60FPS on my system in ideal conditions (standing still in a plains biome). These have been configured for a Vanilla/Dungeons inspired look.*
 ==Note: Rainbow's Foliage causes decent performance hits with shaders enabled.==
@@ -1005,7 +1033,7 @@ Type: Mod
 License: ARR
 Purpose in Pack: Add fun features to the landscape, procedural and vanilla-friendly.
 Status: Added
-*It's not possible to tweak the rarity, shaping, or sizing of landmarks as of current. It also uses campfires in underwater vents. This may go on HOLD until the ability to configure them is added, or may be modified to remove rocks entirely.*
+*This has been modified with a datapack to reduce the occurence of very large rock structures. Underwater vents use campfires which I'm not obsessed with, but I can live with it.*
 
 ## Minor Additional Content
 
@@ -1227,6 +1255,13 @@ Author: fishstiz
 Type: Mod
 License: MIT
 Purpose in Pack: Help to manage resource packs.
+Status: Added
+
+[Yeetus Experimentus](https://modrinth.com/mod/yeetus-experimentus)
+Author: Sunekaer, ErrorMikey, Nanite
+Type: Mod
+License: ARR
+Purpose in Pack: Remove the 'Experimental Settings' warning
 Status: Added
 #### **Game Tweaking**
 
