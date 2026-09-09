@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/CV/","hide":true,"dgShowInlineTitle":true,"dgShowToc":true,"created":"2026-09-06T10:04:04.250+09:30","updated":"2026-09-09T14:56:37.812+09:30"}
+{"dg-publish":true,"permalink":"/CV/","hide":true,"dgShowInlineTitle":true,"dgShowToc":true,"created":"2026-09-06T10:04:04.250+09:30","updated":"2026-09-09T15:14:14.844+09:30"}
 ---
 
 # Welcome
@@ -44,14 +44,10 @@ Imagery can help almost any project become more vibrant and fun, so I find mysel
 
 I also use 'photoshop' skills (in Photoshop or other software) to mock-up design ideas. While I was overseas, I used this skill alongside 3D voxel modelling to make an interior design plan for my bedroom.
 
-| Before                                    | Mockup                                    |
-| ----------------------------------------- | ----------------------------------------- |
-| ![[Pasted image 20260907105436.png\|338]] | ![[Pasted image 20260907105456.png\|331]] |
+![Pasted image 20260907105436.png|338](/img/user/Attachments/Pasted%20image%2020260907105436.png)![Pasted image 20260907105456.png|331](/img/user/Attachments/Pasted%20image%2020260907105456.png)
+
 **Result**
-
-| ![[Pasted image 20260907105034.png\|379]] | ![[Pasted image 20260907105042.png\|306]] |
-| ----------------------------------------- | ----------------------------------------- |
-
+![Pasted image 20260907105034.png|379](/img/user/Attachments/Pasted%20image%2020260907105034.png)![Pasted image 20260907105042.png|306](/img/user/Attachments/Pasted%20image%2020260907105042.png)
 ### Team Work and Community Management
 
 I volunteer at a local brass band organisation both as an IT specialist and managing [venue hiring](https://www.spacetoco.com/space/edwardstown-sa-marion-city-band) out to members of the public. I pay particular attention to areas for improvement and communicate both with the organisation and our clients to find the best solutions. This work involves making and receiving phone calls, solving issues in short timeframes, negotiating repair fees, and managing time conflicts.
