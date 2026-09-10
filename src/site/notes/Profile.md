@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"dgShowToc":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-09-10T20:59:56.463+09:30"}
+{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"dgShowToc":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-09-10T21:07:50.133+09:30"}
 ---
 
 # Welcome
@@ -61,7 +61,7 @@ I also use digital image manipulation skills to mock-up design ideas. While I wa
 ![Pasted image 20260907105436.png|338](/img/user/Attachments/Pasted%20image%2020260907105436.png)![Pasted image 20260907105456.png|331](/img/user/Attachments/Pasted%20image%2020260907105456.png)
 
 **Result**
-![Pasted image 20260907105034.png|379](/img/user/Attachments/Pasted%20image%2020260907105034.png)![Pasted image 20260907105042.png|306](/img/user/Attachments/Pasted%20image%2020260907105042.png)
+![Pasted image 20260910210741.png|342](/img/user/Attachments/Pasted%20image%2020260910210741.png)![Pasted image 20260907105042.png|306](/img/user/Attachments/Pasted%20image%2020260907105042.png)
 
 ### Other Skills and Experience
 
