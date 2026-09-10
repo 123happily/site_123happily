@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-07T22:44:53.000+09:30"}
+{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-09T21:28:12.025+09:30"}
 ---
 
 Here's the wiki for Create Lemonade;
@@ -26,11 +26,13 @@ Complementary Shaders: https://modrinth.com/shader/complementary-reimagined
 
 'crumb' shader has... potential as a really low end friendly thing, but i might actually use lumalight over this, its just impossible to tell what the settings do
 lumalight crashes for some reason tho lmao its not that good looking either
-i'm just missing rimlight and bloom in the base game... sighhh
-
+i'm just missing rimlight and bloom in the base game... sighhh. we wait for artshade i think...
 #### To-do/In Progress
 
+- [ ] The wandering trader's texture is broken... uh oh... so is the snow golem's shaved head face
+- [ ] bunch of tool textures are broken, probably the durability thing that vanilla tweaks is trying to do. we wont even have that, so get rid of it
 - [ ] Add MIT credits to the credit.txt? find out if i even need to for things stored on modrinth?
+- [ ] Leaving the game paused and alt-tabbed, and coming back, makes the fog come super close. it fades back to reasonable after a few seconds. NO clue what that's about.
 - [ ] make the lantern hip slot a smaller proper lantern instead of the GIGACHAD BRICK it is rn lol
 - [ ] add more stupid log things to the log cleaner where suitable
 - [ ] I've disabled CliffTree's sky biomes for the meantime because it makes world previews difficult to see. I can probably re-enable these once i'm done using seed preview.
@@ -40,7 +42,6 @@ i'm just missing rimlight and bloom in the base game... sighhh
 - [ ] look into a decent PBR pack to pair with shaders, or dont fucking bother yknow
 - [ ] whatever resource pack manager mod you use, you should be able to make a preset or hide irrelevant packs or lock in packs or something, so do that
 - [ ] I'd like variations or at least random rotation of the ice texture for places like ice spikes.
-- [ ] make a suitable GUI for the crafter (not mission critical)
 - [ ] Continue and wrap up the biome colorations in my pack
 - [ ] fix up the create gui buttons to match the 26.2 format
 - [ ] make a suitable locator bar resource edit for the [gui](https://mcasset.cloud/26.2/assets/minecraft/textures/gui/sprites/hud) (idk how to test it lmao)
@@ -48,9 +49,6 @@ i'm just missing rimlight and bloom in the base game... sighhh
 - [ ] maybe reinstate voxy worldgen on release even though it has the OOM bug. casual players are unlikely to run into it...
 
 #### Waiting for help
-
-Deep Origins Stripped Log Fix
-no action required in the meantime really
 
 [voxy worldgen pause screen OOM crash](https://github.com/iSeeEthan/voxy_worldgen_v2/pull/93)
 voxy worldgen is on hold until fixed
@@ -60,15 +58,13 @@ Until this is resolved, I will be implementing the mentioned workaround that dis
 
 Snowy leaves mod not playing nice with world generation for some reason. the author is as befuddled as I am so it's probably something to just live with.
 
-fancymenu is shitting itself with Wakes. wait for wakes author to pony tf up and then reinstate it (may have to tell fancymenu guy to take away the incompat marker)
+fancymenu is shitting itself with Wakes. wait for wakes author to pony tf up and then reinstate it (then i have to tell fancymenu guy to take away the incompat marker) though artshade, if it fixes its problems, has its own wakes...
 
 I put in a bug report to ARTSHADE for the fusion overlay misbehaviour, they saw it, we wait and see.
 
 waiting for permission from dr7 (or no permission, depending) on using the 26.2 sodium port in the pack. if you spot them online, maybe ping them in the server.
 
-#### Problem Solving
 
-- [ ] Leaving the game paused and alt-tabbed, and coming back, makes the fog come super close. it fades back to reasonable after a few seconds. NO clue what that's about.
 #### It's just cooked
 
 Air Gap Fix not working on Create blocks is a shame but create being what it is, and create fly being a fork, I don't think it's even worth reporting the issue considering I don't know precisely the problem.
@@ -792,7 +788,14 @@ Status: Added
 Author: Jacosvaldo
 Type: Resource Pack
 License: CC-BY-NC-SA-4.0
-Purpose in Pack: Make the enchanting table look better and glow
+Purpose in Pack: Make the enchanting table look better and glow.
+Status: Added
+
+[Beta Beacon](https://modrinth.com/resourcepack/beta-beacon)
+Author: miau_the_cat
+Type: Resource Pack
+License: MIT
+Purpose in Pack: Make beacons look a bit nicer.
 Status: Added
 ##### **Grass/Leaves/Plants/Ground Cover**
 
@@ -958,6 +961,13 @@ Author: ZipeStudio
 Type: Mod
 License: CC-BY-ND-4.0
 Purpose in Pack: Changes the water surface colour based on the depth of the water. Makes oceans look less flat.
+Status: Added
+
+[Pumpkin Blur, Pixelated and Circular!](https://modrinth.com/resourcepack/pixelated-circular-pumpkin-blur)
+Author: ARKK
+Type: Resource Pack
+License: ARR
+Purpose in Pack: Make the pumpkin blur easier to see through and more vanilla-styled
 Status: Added
 
 #### **Shaders**
