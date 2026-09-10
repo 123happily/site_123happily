@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"dgShowToc":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-09-10T21:07:50.133+09:30"}
+{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"dgShowToc":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-09-10T21:10:24.178+09:30"}
 ---
 
 # Welcome
@@ -21,6 +21,7 @@ I have strong tech skills across Windows, MacOS, iOS, and Linux. I'm quick to ad
 | <iframe width="300" height="200" src="https://www.youtube.com/embed/5YWV8rixKrg" title="OpenUTAU Install Tutorial (+ recommended settings!)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> | <iframe width="300" height="200" src="https://www.youtube.com/embed/gzwiW2iGmFU" title="OpenUTAU Tutorial (tm)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | *64k views*                                                                                                                                                                                                                                                                                                                                         | *50k views*                                                                                                                                                                                                                                                                                                            |
+
 These are some examples of educational content I have created surrounding the Free and Open Source Software (FOSS) project called 'OpenUTAU'. This software allows users to generate artificial singing vocals and has been developing since 2008. The majority of content on my YouTube channel revolves around this software, tying into my Japanese language, digital art, and video editing skills.
 
 ##### **Server Hosting**
