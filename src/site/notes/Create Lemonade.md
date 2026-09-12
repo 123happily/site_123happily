@@ -1,27 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-09T21:28:12.025+09:30"}
+{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-12T21:22:50.092+09:30"}
 ---
 
 Here's the wiki for Create Lemonade;
 It's also my main working document, you have my apologies for the mess.
-
-## Description/Pitch/Surface-level Credits
-
-CREATE: LEMONADE
-When life gives you lemons, create lemonade!
-
-Minecraft players have developed tons of farms, cheeses, exploits, and more. These allow you great progression, but game feel aesthetically and logically incoherent. I don't want to use these techniques, but I don't want to play the 'hard' way either! This modpack aims to reduce the need for these exploits by offering alternatives, not by banning or nerfing them. It forefronts Create's fantastic design alongside many other gameplay tweaks to focus on factory building and expansion. It removes most typical challenges of Minecraft's gameplay - this is not a challenging modpack! It's heavily inspired by Satisfactory's game balance; the focus is on automation, building, and relaxing through easy progression rather than PvE, punishing losses, or difficult challenges.
-
-Key words: QoL, Vanilla Aesthetic, Simple, Fun, Casual
-
-AI Declaration:
-Though I cannot speak for the contents of this modpack (i.e mods, resource packs, datapacks) I can clarify that I don't use AI content or coding (such as LLM output or image/video/audio generation models) in my works.
-My single use-case is using DeepSeek's free model to diagnose crash logs. I always read the relevant error first and do my own research before asking an LLM, which means I rarely have to resort to this method.
-
-Explicit Credits; full listing via the wiki page:
-Vanilla Tweaks: https://vanillatweaks.net/
-Title generator: https://ewanhowell.com/plugins/minecraft-title-generator/ ("Bubble" template texture modified with Photopea)
-Complementary Shaders: https://modrinth.com/shader/complementary-reimagined
 # Workings
 
 'crumb' shader has... potential as a really low end friendly thing, but i might actually use lumalight over this, its just impossible to tell what the settings do
@@ -29,26 +11,29 @@ lumalight crashes for some reason tho lmao its not that good looking either
 i'm just missing rimlight and bloom in the base game... sighhh. we wait for artshade i think...
 #### To-do/In Progress
 
-- [ ] The wandering trader's texture is broken... uh oh... so is the snow golem's shaved head face
-- [ ] bunch of tool textures are broken, probably the durability thing that vanilla tweaks is trying to do. we wont even have that, so get rid of it
-- [ ] Add MIT credits to the credit.txt? find out if i even need to for things stored on modrinth?
+- [ ] the snow golem's shaved head face is broken??
+- [ ] ban baby zombies. they're bullshit and i can't be arsed making the textures for them.
+- [ ] start looking into more gameplay balancing stuff like Enchancements and its config
+- [x] fix inventory spyglass slot to have the correct background colour
+- [ ] search for 'planned' and implement or update entries, periodically.
 - [ ] Leaving the game paused and alt-tabbed, and coming back, makes the fog come super close. it fades back to reasonable after a few seconds. NO clue what that's about.
 - [ ] make the lantern hip slot a smaller proper lantern instead of the GIGACHAD BRICK it is rn lol
 - [ ] add more stupid log things to the log cleaner where suitable
 - [ ] I've disabled CliffTree's sky biomes for the meantime because it makes world previews difficult to see. I can probably re-enable these once i'm done using seed preview.
-- [ ] Finalise a pack description and unify it between modrinth, and github, clearing it from here, making sure you include a link to this page and a credit explanation section
-- [ ] remake vanilla tweaks using website to take out twinkling stars, hunger apples, GUI buttons, and tooltip, and clean up the dupe file while you're there
+- [x] Finalise a pack description and unify it between modrinth, and github, clearing it from here, making sure you include a link to this page and a credit explanation section
+- [x] remake vanilla tweaks using website to take out twinkling stars, hunger apples, GUI buttons, tool durabilities, and tooltip, and clean up the dupe file while you're there
 - [ ] Add overlay logic onto Create's blocks where it makes sense to do so (i.e tuff and deepslate gen next to ochrum...)
 - [ ] look into a decent PBR pack to pair with shaders, or dont fucking bother yknow
 - [ ] whatever resource pack manager mod you use, you should be able to make a preset or hide irrelevant packs or lock in packs or something, so do that
 - [ ] I'd like variations or at least random rotation of the ice texture for places like ice spikes.
 - [ ] Continue and wrap up the biome colorations in my pack
-- [ ] fix up the create gui buttons to match the 26.2 format
-- [ ] make a suitable locator bar resource edit for the [gui](https://mcasset.cloud/26.2/assets/minecraft/textures/gui/sprites/hud) (idk how to test it lmao)
+- [x] fix up the create gui buttons to match the 26.2 format
 - [ ] debate setting up very minor "lore" and a starting structure, like satisfactory.
 - [ ] maybe reinstate voxy worldgen on release even though it has the OOM bug. casual players are unlikely to run into it...
 
 #### Waiting for help
+
+sandw of Overlay's is working on a fix for the issue... i'm gonna clear out all my stuff and wait for that before i try to do any more work with it, at which point i can remake the folder in documents to match modern too
 
 [voxy worldgen pause screen OOM crash](https://github.com/iSeeEthan/voxy_worldgen_v2/pull/93)
 voxy worldgen is on hold until fixed
@@ -56,18 +41,20 @@ voxy worldgen is on hold until fixed
 [Game close thread hang issue with Flywheel](https://github.com/ZurrTum/Create-Fly/issues/357)
 Until this is resolved, I will be implementing the mentioned workaround that disables GPU rendering, however I don't want to ship this modpack until a solution is found because of the potential performance issues. when that happens, re-test shaders for compatibility.
 
-Snowy leaves mod not playing nice with world generation for some reason. the author is as befuddled as I am so it's probably something to just live with.
+[dadget's animal villagers nesting issue](https://github.com/draklorx/animalkin_villagers/issues/2)
+once this is merged i can remove the fix from my own surface-level pack
 
 fancymenu is shitting itself with Wakes. wait for wakes author to pony tf up and then reinstate it (then i have to tell fancymenu guy to take away the incompat marker) though artshade, if it fixes its problems, has its own wakes...
 
 I put in a bug report to ARTSHADE for the fusion overlay misbehaviour, they saw it, we wait and see.
 
-waiting for permission from dr7 (or no permission, depending) on using the 26.2 sodium port in the pack. if you spot them online, maybe ping them in the server.
-
+waiting for permission from dr7 (or no permission, depending) on using the 26.2 sodium port in the pack. apparently they've been MIA for a while now.
 
 #### It's just cooked
 
 Air Gap Fix not working on Create blocks is a shame but create being what it is, and create fly being a fork, I don't think it's even worth reporting the issue considering I don't know precisely the problem.
+
+Snowy leaves mod not playing nice with world generation for some reason. the author is as befuddled as I am. I don't expect a fix any time soon.
 
 ### Git
 
@@ -100,6 +87,7 @@ I have to zip my datapack before distributing, but my resource pack seems to mak
 
 ### Pack Resource and Data Pack
 
+**biome stuff**
 I can adjust biome-based sky, leaf, grass, and other foliage colors, and [more](https://github.com/MehVahdJukaar/polytone/wiki/Environment-Attributes), so it's probably ideal to keep track of what I've been up to...
 
 Oak leaves for some reason eats the biome-based simple configurations alive, so I can't really use a full colormap for those. Everything else is fair game though.
@@ -630,7 +618,7 @@ Author: MinecraftEinstein, TheEnderCore
 Type: Mod
 License: ARR
 Purpose in Pack: Add more effects. Also fades out night vision, lowers fire overlay, somewhat clears fire overlay when you have fire resistance, somewhat clears potion particle opacity based on distance to player, and more.
-Status: Planned
+Status: Added
 *Many effects that I feel don't suit the look or are too intrusive have been disabled. Others have been reduced in intensity or likelihood. Will disable 'allow using blended render type' if issues around particle transparency occur. Particle culling has been disabled to reduce issues with existing particle culling mods. Some features, like the falling leaves, splahes, waterfalls, and fireflies, have been given to Particular.*
 
 [Particular](https://modrinth.com/mod/particular-reforged)
@@ -710,19 +698,7 @@ Status: Added
 ##### **Overlays, Variations, and Connected Textures**
 *Due to technical limitations, overlays don't work on connected textures via Continuity or Fusion, so overlays are being prioritised for the forseeable future*
 
-[Deep Origins Overlays](https://modrinth.com/resourcepack/deep-origins-overlays)
-Author: Devoxxel
-Type: Resource Pack
-License: MIT
-Purpose in Pack: Add smooth and creative overlays between blocks.
-Status: Added + Tweaked with a pack loaded on top for compat reasons
-
-[Connected Bricks (Fusion)](https://modrinth.com/resourcepack/connected-bricks-(fusion)/gallery)
-Author: Jacosvaldo
-Type: Resource Pack
-License: CC-BY-NC-SA-4.0
-Purpose in Pack: Make bricks overlap each other nicely
-Status: Added
+i dont know mannnn im in hell
 ##### **Mobs**
 
 [3D Harnesses x Fresh Animations](https://modrinth.com/resourcepack/3d-harnesses-x-fresh-animations)
@@ -1054,12 +1030,12 @@ License: CC-BY-NC-SA-4.0
 Purpose in Pack: Adds more mob variants to fit the biomes of CliffTree.
 Status: Added
 
-[Party Spore](https://modrinth.com/mod/party-spores)
+[Party Spores](https://modrinth.com/mod/party-spores)
 Author: A5ho9999
 Type: Mod
 License: Custom License + Modpack Permission Explicitly Given
 Purpose in Pack: Lets you dye spore blossoms and the particles they produce, great for builders wanting to tweak atmosphere.
-Status: Planned
+Status: Added
 ## Performance/BugFixes/Utility/Other
 *The boring stuff that keeps it all working under the hood. I won't document the dependencies in this pack.*
 #### **Performance :LiBadgeCheck:**
@@ -1200,7 +1176,7 @@ Author: KostromDan
 Type: Mod
 License: KostromDam MML 1.1.3
 Purpose in Pack: Help with diagnosis after a crash. Hopefully won't come up too often...!
-Status: Planned
+Status: Added
 
 [Seed Viewer](https://modrinth.com/mod/seed-viewer)
 Author: Acenia
@@ -1229,14 +1205,15 @@ Author: Jerozgen
 Type: Mod
 License: MIT
 Purpose in Pack: Speed up language swapping and add a search bar. If you mainly speak another language, look for Create Mod translation resource packs to fully apply it.
-Status: Planned
+Status: Added
 
 [Disable Narrator](https://modrinth.com/mod/disable-narrator)
 Author: fmg1925
 Type: Mod
 License: MIT
 Purpose in Pack: Removed narrator entirely, including the large logs it tends to print on Linux. Remove this mod if you use the narrator!
-Status: Planned
+Status: HOLD
+*Crashes for some unknown reason.*
 
 [Console Spam Fix: Reborn](https://modrinth.com/plugin/console-spam-fix-reborn)
 Author: Author87668
