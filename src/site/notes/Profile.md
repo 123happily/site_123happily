@@ -1,12 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"dgShowToc":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-09-10T21:10:24.178+09:30"}
+{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"dgShowToc":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-09-13T23:10:31.635+09:30"}
 ---
 
 # Welcome
 
 Hello! You've made it to my online profile. This website is a collection of my various skills and fields of experience, with links to my works across the internet.
 
-### Team Work and Community Management
+### Team Work and Management
 
 I volunteer at a local brass band organisation both as an IT specialist and managing [venue hiring](https://www.spacetoco.com/space/edwardstown-sa-marion-city-band) out to members of the public. I pay particular attention to areas for improvement and communicate both with the organisation and our clients to find the best solutions. This work involves making and receiving phone calls, solving issues in short timeframes, negotiating repair fees, and managing time conflicts. I respect the importance of customer satisfaction and relationships, and maintain a focus on this throughout my work.
 ![Pasted image 20260909135900.png](/img/user/Attachments/Pasted%20image%2020260909135900.png)
@@ -59,6 +59,7 @@ Imagery can help almost any project become more vibrant and fun, so I find mysel
 
 I also use digital image manipulation skills to mock-up design ideas. While I was overseas, I used this skill alongside 3D voxel modelling to make an interior design plan for my bedroom. I then converted this design into reality, adjusting where needed for the best result.
 
+**Prior photo and mock-up**
 ![Pasted image 20260907105436.png|338](/img/user/Attachments/Pasted%20image%2020260907105436.png)![Pasted image 20260907105456.png|331](/img/user/Attachments/Pasted%20image%2020260907105456.png)
 
 **Result**
