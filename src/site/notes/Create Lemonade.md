@@ -1,18 +1,36 @@
 ---
-{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-12T21:22:50.092+09:30"}
+{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-16T14:59:52.573+09:30"}
 ---
 
 Here's the wiki for Create Lemonade;
 It's also my main working document, you have my apologies for the mess.
+
+# Special Credits
+
+**Leclowndu93150** for making the Custom Seed Filter mod
+
+**Poetic Rainbow** for granting permission to overwrite his textures to work better with biome tinting
+
+**Fabiofdez** for patching a bug in their mod on my request
+
+**The people of the MPD Discord** for sharing interesting mods, putting together helpful resources, and always being there to answer my questions
+
+And of course **all of the authors credited here** for making this possible!
 # Workings
 
-'crumb' shader has... potential as a really low end friendly thing, but i might actually use lumalight over this, its just impossible to tell what the settings do
-lumalight crashes for some reason tho lmao its not that good looking either
-i'm just missing rimlight and bloom in the base game... sighhh. we wait for artshade i think...
+Definitely have to look into I Like Vanilla for a shader...!!
+
+I have to stop finding new mods and just work on my existing list lol
+
+'crumb' shader has... potential as a really low end friendly thing
+i'm just missing rimlight and bloom in the base game... sighhh. we wait for artshade i think... though artshade isn't as performant as i hoped it would be.
+I'm honestly considering using shine 2.0.
 #### To-do/In Progress
 
 - [ ] the snow golem's shaved head face is broken??
 - [ ] ban baby zombies. they're bullshit and i can't be arsed making the textures for them.
+- [ ] Add the thing into the datapack (do i even have one of those) to make ruined portals surface always
+- [ ] Could also try to remove powdered snow with Featurify, or a mod, or… like i dont think i need those mods necessarily, the things i want to do have mods already, its more of a future proofing thing. ANYWAY just see if you can get rid of lava pockets and powdered snow or if you need to do something else
 - [ ] start looking into more gameplay balancing stuff like Enchancements and its config
 - [x] fix inventory spyglass slot to have the correct background colour
 - [ ] search for 'planned' and implement or update entries, periodically.
@@ -106,9 +124,148 @@ TO DO:
 Clifftree's Snowy Old Growth Taiga is a frosty blue.
 Taiga is a rich green.
 
-## mods i might throw in later
+## stuff i might throw in later
 
-I don't want realms but i'm gonna muck with the menu later so I'll be able to piss it off.
+#### worldgen musings
+
+I wish i could limit the viable seeds to a pool i controlled, alas.
+even then, there's only a few continent seeds i've found that feel worthy of being put on the pregen pedestal.
+and it does limit me from introducing other improvements...
+i think ...
+fuck, but i want the world border! turning that on or off isn't going to be just one setting.
+and i'm afraid that any random seed won't have all structures/biomes within 5kx5k. i'd almost certainly have to throw away ocean scaling to the level that continents does it in order to ensure this... unless there's a way to autoset the border larger... something like 10k...
+https://modrinth.com/mod/starter-items
+there we go.
+
+*If I don’t like tectonic, I could do these:*
+https://www.curseforge.com/minecraft/mc-mods/old-continents
+Adds a slider for ocean size, tested compatible with toroidal world
+https://modrinth.com/datapack/continents
+Alternative continent generation, no clue if it likes toroidal, dont see why not
+https://modrinth.com/datapack/larger-biomes/gallery
+makes biomes 2x larger instead of 4x like in LB. completely breaks seed parity fyi
+https://modrinth.com/mod/abridged/gallery
+Mainly its here cause it says it gets ‘funky’ with tectonic installed lol
+
+https://modrinth.com/mod/latitude
+Its an option for temperature banding, though it blocks off the world in its own ways (no looping). Compatible with clifftree and tectonic. Messes with some surface features as well. its trying to be a huge thing
+https://modrinth.com/mod/natural-temperature
+The less intensive one. Shits itself with atmospherics (noted…)
+
+bordering:
+https://modrinth.com/mod/world-border
+The thing that lets you do looping borders
+https://modrinth.com/datapack/legacywb-5120x
+auto-sets the vanilla border to 5120 blocks
+https://modrinth.com/mod/saros-worldborder-customizer
+change worldborder colour and animate it a bit
+https://modrinth.com/resourcepack/better-worldborder/gallery
+make it look a bit nicer
+https://modrinth.com/resourcepack/simplified-border
+minimises the look severely, might help to telegraph that you can go through.
+https://modrinth.com/resourcepack/border-makeover
+more options, many in the one file lol. 4 and 9 look nice
+
+https://modrinth.com/mod/treeplacer
+Unclear if i even need this for clifftree. Go to a custom clifftree biome and test it… seems easy enough to make a compat file though.
+
+https://modrinth.com/mod/azalea-growth-control
+I’m thinking about it. Would need config for clifftree support
+
+https://modrinth.com/mod/improved-village-placement
+If i dont use structurify’s method
+
+https://modrinth.com/mod/better-lava-lakes
+Sick
+
+https://modrinth.com/mod/muddywaters
+Slowly turns water-adjacent dirt to mud
+
+I want some more structures maybe? But almost all of the mods are doing way too much
+
+https://modrinth.com/datapack/amplified-nether
+
+https://modrinth.com/mod/nomorepowder
+pros: gets rid of powdered snow without fully removing it from the game
+cons: AI slop
+#### Gameplay
+
+https://modrinth.com/mod/biome-spreader/gallery
+Adds items with which to werf flammen- spread biomes, though its somewhat limited and i might have to add recipes to support clifftree, based off this datapack format…
+
+https://modrinth.com/mod/instant-portal-nether
+
+https://modrinth.com/mod/harous-netherite-shulkers
+compat is a question.
+
+https://modrinth.com/mod/small-netherite-beacons
+
+https://modrinth.com/mod/netherite-lava
+makes full netherite give you fire resistance, but ticks its durability
+https://modrinth.com/mod/enhanced-netherite-armour
+alternative that also does horse armour
+
+the thing to get wandering traders to go away lol
+
+https://modrinth.com/mod/wikiful
+show pop-ups with handy info when the user finds an item, and add a menu-accessible wiki. handy to explain changes in the pack in-game, but might cause headaches with my create gui theming.
+
+https://modrinth.com/datapack/call-your-happy-ghast
+fym 'needs cheats to work'. test.
+
+https://modrinth.com/datapack/low-end-gravity
+kinda a wicked idea for something with 6 fucking downloads
+
+https://modrinth.com/mod/reliable-requiem
+VERY comprehensive death penalty- WHOAH. penalties-upon-death mod
+
+purpur packs go
+[Copper Block Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-copper-block-beacon-base)  
+[Blasting Smelts Glass [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-blasting-smelts-glass)  
+[Axe Effective Skulls [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-axe-effective-skulls)  
+[Silk Touch Reinforced Deepslate [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-silk-touch-reinforced-deepslate)  
+[Rebalanced Piglin Bartering [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-rebalanced-piglin-bartering)  
+[Axolotls Ignore Passives [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-axolotls-ignore-passives)  
+[Redstone Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-redstone-beacon-base)  
+[Lapis Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-lapis-beacon-base)  
+[Amethyst Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-amethyst-beacon-base)  
+[Looting Shears [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-looting-shears)  
+[[PurpurPack] Stonecutter Cuts Wood - Slabs and Stairs - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-slabs)  
+[[PurpurPack] Stonecutter Cuts Wood - Doors and Trapdoors - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-doors)  
+[Stonecutter Buttons and Pressure Plates [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-buttons)  
+[Silk Touch Budding Amethyst [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-silk-touch-budding-amethyst)  
+[Pickaxe Effective Reinforced Deepslate [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-reinforced-deepslate)  
+[Pickaxe Effective Glass [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-glass)  
+[Pickaxe Effective Light Source Blocks [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-light-source-blocks)  
+[Hoe Effective Cactus [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-hoe-effective-cactus)  
+[Transparent Blocks In Enchant Area [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-transparent-blocks-in-enchant-area)  
+[Breed Axolotl With Tropical Fish Item [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-breed-axolotl-with-tropical-fish-item)  
+[Hoe Effective Froglights [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-hoe-effective-froglights)
+#### bugfix/util
+
+https://github.com/D3ADK1LLSH0T/config-presets
+this would be an absolute GODSEND if it was updated to 26.2. GOD. SEND. i'm following it twice lol.
+
+https://modrinth.com/mod/netherportalfix
+
+maybe a mod to well and truly piss realms off
+
+https://modrinth.com/datapack/simple-homing-xp
+https://modrinth.com/mod/instant-xp-gain
+one of these. the former is probably heavier but more widely compatible and less confusing so i'm leaning towards that
+#### graphics
+
+https://modrinth.com/mod/mc2-interactive-foliage
+apparently this can make them wave in the wind
+
+https://modrinth.com/mod/big-water/gallery
+Awesome solution to water textures being so tiled. Check compat with wakes’ flowing water and obviously artshade will overwrite but maybe complementary will preserve it.
+
+https://modrinth.com/resourcepack/water-caustics
+seriously unsure about its performance and its shader compatibility
+
+https://modrinth.com/resourcepack/natural-textures
+could be handy. at the very least will explain how to spin ice
 
 https://modrinth.com/mod/fancy-toasts
 alternative to advancement plaques. you can do custom textures, i probably would want to given the "best" one is actually a terraria themed thing lol
@@ -137,49 +294,8 @@ https://modrinth.com/resourcepack/more-nether-roots also...
 https://modrinth.com/resourcepack/os-variated-glow-lichen
 would have to change vanilla tweaks so its not a 3d model in there anymore
 
-https://modrinth.com/mod/wikiful
-show pop-ups with handy info when the user finds an item, and add a menu-accessible wiki. handy to explain changes in the pack in-game, but might cause headaches with my create gui theming.
-
-the thing to get wandering traders to go away lol
-
 https://www.planetminecraft.com/texture-pack/3d-breaking/
 this is so old there's no way right
-
-https://modrinth.com/datapack/call-your-happy-ghast
-fym 'needs cheats to work'. test.
-
-https://modrinth.com/mod/not-enough-pots/gallery
-this is doing *too much* but i cant find anything better
-i swear i saw one for builders and didnt write it down noooo
-
-https://modrinth.com/datapack/simple-homing-xp
-https://modrinth.com/mod/instant-xp-gain
-one of these. the former is probably heavier but more widely compatible and less confusing so i'm leaning towards that
-
-https://modrinth.com/datapack/low-end-gravity
-kinda a wicked idea for something with 6 fucking downloads
-
-https://modrinth.com/mod/mc-day-counter
-https://modrinth.com/mod/betterdays
-https://modrinth.com/mod/sleep-warp-updated
-it'd be great if these all worked together. Betterdays i would use to make days and nights much longer. sleep warp properly ticks things overnight which should play nice with create one hopes. the day counter is just really cute.
-apparently sleepwarp breaks the formatting of fusz mods config screen text??? lmao. anyway
-
-https://modrinth.com/mod/reliable-requiem
-VERY comprehensive death penalty- WHOAH. penalties-upon-death mod
-
-https://www.curseforge.com/minecraft/mc-mods/modest-magic
-an option for enchantments...
-
-https://modrinth.com/mod/shadeandsaturation/gallery
-could be handy
-
-https://modrinth.com/mod/nomorepowder
-pros: gets rid of powdered snow without fully removing it from the game
-cons: AI slop
-
-https://modrinth.com/mod/mc2-interactive-foliage
-kinda sick
 
 punchy/hyper punchy
 i'm just unsure how it'll feel. will probably need create skyhook compat whatever whatever
@@ -189,32 +305,21 @@ particle... effects ... poti... on...
 
 https://modrinth.com/resourcepack/brays-better-3d-bow/gallery
 if i care
+#### Waiting/'maybe'/misc
 
-https://modrinth.com/mod/datapack-injector
-mm
+https://modrinth.com/mod/toroidal-world
+if this fixes its bugs/voxy incompatibility/streams incompatibility i'll seriously consider it.
 
-purpur packs go
-[Copper Block Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-copper-block-beacon-base)  
-[Blasting Smelts Glass [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-blasting-smelts-glass)  
-[Axe Effective Skulls [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-axe-effective-skulls)  
-[Silk Touch Reinforced Deepslate [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-silk-touch-reinforced-deepslate)  
-[Rebalanced Piglin Bartering [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-rebalanced-piglin-bartering)  
-[Axolotls Ignore Passives [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-axolotls-ignore-passives)  
-[Redstone Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-redstone-beacon-base)  
-[Lapis Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-lapis-beacon-base)  
-[Amethyst Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-amethyst-beacon-base)  
-[Looting Shears [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-looting-shears)  
-[[PurpurPack] Stonecutter Cuts Wood - Slabs and Stairs - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-slabs)  
-[[PurpurPack] Stonecutter Cuts Wood - Doors and Trapdoors - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-doors)  
-[Stonecutter Buttons and Pressure Plates [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-buttons)  
-[Silk Touch Budding Amethyst [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-silk-touch-budding-amethyst)  
-[Pickaxe Effective Reinforced Deepslate [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-reinforced-deepslate)  
-[Pickaxe Effective Glass [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-glass)  
-[Pickaxe Effective Light Source Blocks [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-light-source-blocks)  
-[Hoe Effective Cactus [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-hoe-effective-cactus)  
-[Transparent Blocks In Enchant Area [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-transparent-blocks-in-enchant-area)  
-[Breed Axolotl With Tropical Fish Item [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-breed-axolotl-with-tropical-fish-item)  
-[Hoe Effective Froglights [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-hoe-effective-froglights)
+https://modrinth.com/mod/not-enough-pots/gallery
+this is doing *too much* but i cant find anything better
+i swear i saw one for builders and didnt write it down noooo
+
+https://modrinth.com/mod/mc-day-counter
+https://modrinth.com/mod/betterdays
+https://modrinth.com/mod/sleep-warp-updated
+it'd be great if these all worked together. Betterdays i would use to make days and nights much longer. sleep warp properly ticks things overnight which should play nice with create one hopes. the day counter is just really cute.
+apparently sleepwarp breaks the formatting of fusz mods config screen text??? lmao. anyway
+
 ## thoughts
 
 I do want to enable the automation of *most stuff* in the game through either Create or non-ugly Vanilla methods. That means getting a full list of items and blocks (including create's) and culling it down - first removing anything that's just a combination of other stuff, and then interrogating the sources of the remaining stuff.
@@ -236,7 +341,7 @@ i'm not done fixing snow. snow on stairs and slabs would be great. snow settings
 I  want to make the end less of a headache. not dying in the void is a start, but i'm not sure if that mod is ideal cause i think you can get softlocked LMAO you could try 'NoVoid' instead which is the same idea.
 otherwise increasing the rarity of end cities with structurify
 shulker drops two and respawning shulkers - make the former a guaranteed 2 drop and the latter a very long timer. this makes getting shulker boxes much easier.
-some tweaks to the elytra to make it less OP for long distances might be good. there's just more support for it out there. i think i'll put elytra bounce, airbrake, and a rocket debuff on it with elytra tuning
+some tweaks to the elytra to make it less OP for long distances might be good. (Though I *did* say i wouldn't nerf it...) there's just more support for it out there. i think i'll put elytra bounce, airbrake, and a rocket debuff on it with elytra tuning
 then it can be visually improved with contrails and trims and physics and bonk mod lmao
 
 Enchanting is getting an overhaul... enchancement is seemingly alright with some config though i've had issues with its simultaneous enchantment cap. I'd like it to be 2... if only cause there's a lot of inventory clutter otherwise.
@@ -368,6 +473,7 @@ Type: Mod
 License: DSMSLv3.1
 Purpose in Pack: Allow extensive customisation of the main menu (and more!)
 Status: Added
+*Control + Alt + C brings up the configuration menu!*
 
 [SpiffyHUD](https://modrinth.com/mod/spiffyhud)
 Author: Keksuccino
@@ -696,9 +802,16 @@ Purpose in Pack: Add godrays even when shaders aren't enabled
 Status: Added
 
 ##### **Overlays, Variations, and Connected Textures**
-*Due to technical limitations, overlays don't work on connected textures via Continuity or Fusion, so overlays are being prioritised for the forseeable future*
+*Due to technical limitations, overlays don't work with connected textures via Continuity or Fusion, so overlays are being prioritised for the forseeable future*
 
 i dont know mannnn im in hell
+
+[Glowy Nether Portals](https://modrinth.com/resourcepack/glowy-nether-portals)
+Author: zpez
+Type: Resource Pack
+License: ARR
+Purpose in Pack: Make nether portals look cooler
+Status: Added
 ##### **Mobs**
 
 [3D Harnesses x Fresh Animations](https://modrinth.com/resourcepack/3d-harnesses-x-fresh-animations)
@@ -978,26 +1091,24 @@ Status: Added
 ## World Generation
 *Changes to terrain and biomes, without adding any modded blocks or items, keeping a vanilla-ish feel. Currently in heavy / messy development.*
 
-#### **Major Changes**
-
-[Tectonic](https://modrinth.com/datapack/tectonic)
-Author: Apollo
+Custom Seed Filter
+Author: Leclowndu
 Type: Mod
-License: MIT
-Purpose in Pack: Change the terrain shape.
+License: N/A
+Purpose in Pack: Limit the potential world generation to a list of seeds sourced from MC@H and other sources.
 Status: Added
-*This has been tweaked slightly from the default values, shrinking continent sizes, compressing biomes to reduce travel requirements, and prioritising flatter terrain.*
+*"Proof of purchase"*
+![Pasted image 20260916145124.png](/img/user/Attachments/Pasted%20image%2020260916145124.png)
+*Proof that I am making the logos*
+![Pasted image 20260916145247.png](/img/user/Attachments/Pasted%20image%2020260916145247.png)
+A huge thanks to Leclowndu for making this mod for me!
 
 [CliffTree](https://modrinth.com/datapack/clifftree)
 Author: Penumbra
 Type: Mod
 License: CC-BY-NC-SA-4.0
-Purpose in Pack: Tweaks vanilla biomes and adds some new ones. Chosen for its reasonable use of blocks, lack of extra content, and fun energy. Will be checked and/or tweaked to ensure access to andesite for Create's progression.
+Purpose in Pack: Tweaks vanilla biomes and adds some new ones. Chosen for its reasonable use of vanilla blocks, high seed parity, and fun energy.
 Status: Added
-*also look for autumn biomes, and backport the fall drop stuff if possible*
-*There are shore biomes with plenty of andesite*
-
-#### **Minor Changes**
 
 [Biome Dither](https://modrinth.com/mod/biome-dither)
 Author: Pufferfish
@@ -1320,6 +1431,9 @@ The UI doesn't mesh with the vision I have for this pack, though I agree that th
 
 [Wavify](https://modrinth.com/mod/wavify/gallery)
 They flow upstream sadly
+
+[Fast Surface](https://modrinth.com/mod/zfastsurface)
+Has some conflict with ModernFix
 
 ## Extra Credits
 *I didn't end up using these things, or assets from these things, in the modpack, but I used them for reference, or wanted to give shoutouts...!*

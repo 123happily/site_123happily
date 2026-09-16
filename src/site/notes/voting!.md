@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/voting!/","created":"2025-12-27T17:22:04.697+10:30","updated":"2025-11-08T15:54:13.000+10:30"}
+{"dg-publish":true,"permalink":"/voting!/","created":"2026-09-13T21:20:58.329+09:30","updated":"2025-11-08T15:54:13.000+10:30"}
 ---
 
 For my own use:
