@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-09-18T16:00:29.935+09:30"}
+{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-09-18T18:37:48.871+09:30"}
 ---
 
 # Welcome
@@ -7,7 +7,7 @@
 Hello! You've made it to my online profile. This website is a collection of my various skills and fields of experience, with links to my works across the internet.
 
 - [[#Team Work and Management|Team Work and Management]]
-- [[#IT Skills and Support|IT Skills and Support]]
+- [[Profile#IT Skills and Support\|IT Skills and Support]]
 		- [[#**Educational Videos**|**Educational Videos**]]
 		- [[#**Server Hosting**|**Server Hosting**]]
 		- [[#**Minecraft World Generation Datapacks**|**Minecraft World Generation Datapacks**]]
