@@ -1,19 +1,19 @@
 ---
-{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-09-18T18:37:48.871+09:30"}
+{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-09-18T18:39:15.282+09:30"}
 ---
 
 # Welcome
 
 Hello! You've made it to my online profile. This website is a collection of my various skills and fields of experience, with links to my works across the internet.
 
-- [[#Team Work and Management|Team Work and Management]]
+- [[Profile#Team Work and Management\|Team Work and Management]]
 - [[Profile#IT Skills and Support\|IT Skills and Support]]
-		- [[#**Educational Videos**|**Educational Videos**]]
-		- [[#**Server Hosting**|**Server Hosting**]]
-		- [[#**Minecraft World Generation Datapacks**|**Minecraft World Generation Datapacks**]]
-- [[#Japanese Language|Japanese Language]]
-- [[#Digital Art and Image Manipulation|Digital Art and Image Manipulation]]
-- [[#Other Skills and Experience|Other Skills and Experience]]
+		- [[Profile#**Educational Videos**\|**Educational Videos**]]
+		- [[Profile#**Server Hosting**\|**Server Hosting**]]
+		- [[Profile#**Minecraft World Generation Datapacks**\|**Minecraft World Generation Datapacks**]]
+- [[Profile#Japanese Language\|Japanese Language]]
+- [[Profile#Digital Art and Image Manipulation\|Digital Art and Image Manipulation]]
+- [[Profile#Other Skills and Experience\|Other Skills and Experience]]
 
 ### Team Work and Management
 
