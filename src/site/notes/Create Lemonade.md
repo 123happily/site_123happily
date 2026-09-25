@@ -1,37 +1,38 @@
 ---
-{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-16T14:59:52.573+09:30"}
+{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-09-25T19:30:10.238+09:30"}
 ---
 
-Here's the wiki for Create Lemonade;
-It's also my main working document, you have my apologies for the mess.
-
-# Special Credits
-
-**Leclowndu93150** for making the Custom Seed Filter mod
-
-**Poetic Rainbow** for granting permission to overwrite his textures to work better with biome tinting
-
-**Fabiofdez** for patching a bug in their mod on my request
-
-**The people of the MPD Discord** for sharing interesting mods, putting together helpful resources, and always being there to answer my questions
-
-And of course **all of the authors credited here** for making this possible!
+Welcome to my main working document! Here you can see my thought processes and all credits for everything used in the modpack. Click here to go back to the wiki: [[Create Lemonade Wiki\|Create Lemonade Wiki]]
 # Workings
 
-Definitely have to look into I Like Vanilla for a shader...!!
+I want to implement something similar to a Villager Trade Rebalance, but with respect for Enchancement's custom enchantments and the lack of tool durability (ergo no need for unbreaking or mending). TL:DR Biome based villager trades. encourages exploration at least before making a trading hall lmao
 
-I have to stop finding new mods and just work on my existing list lol
+maybe try atmospheric, if you really feel the urge...
 
-'crumb' shader has... potential as a really low end friendly thing
-i'm just missing rimlight and bloom in the base game... sighhh. we wait for artshade i think... though artshade isn't as performant as i hoped it would be.
-I'm honestly considering using shine 2.0.
+Enchancement needs heavy config but thats very much a balance thing
+
+
 #### To-do/In Progress
 
+- [ ] find a way to shut up datapacks on world load/test if they show on survival world load
+- [ ] make [superior smelting](https://modrinth.com/datapack/superior-smelting) and [blasting plus](https://modrinth.com/datapack/blasting-plus) and [smoking plus](https://modrinth.com/datapack/smoking-plus) recipes work in create
+- [x] add/fix enchantment table UI create style... probably its because of enchancements
+- [x] furnaces have stopped rotating to face the player... its that gosh darn rotations pack... maybe just get rid of it.
+- [ ] mark clifftree's sky biomes in biome spreader's no touchies config entry
+- [ ] make clifftree biomes (of note) for https://modrinth.com/mod/biome-spreader, note recipes for wiki because they dont show in JEI.
+- [ ] find a sound control mod to identify wtf is making a ding when you pull back a bow??
+- [x] test if happy ghast calling works on survival
+- [x] upload the custom seed filter to modrinth, yeah?
+- [x] test whether reliable replacer is getting rid of powdered snow
+- [ ] set create's schematicannon to be Fast
+- [ ] trading with a piglin in the overworld sometimes results in them absolutely spewing gold everywhere but thats probably just vanilla being vanilla
 - [ ] the snow golem's shaved head face is broken??
+- [ ] grass break particle is dirt
+- [x] Start making an alternate wiki or section here that explains the changes to gameplay without explaining all the mods in such detail, for players who want to know what's going on
+- [ ] mess with buttons on pause screen
+- [ ] Look into custom advancements ... i,e trade with every villager type... things completionists would want to do. it might be my only option aside from a wiki, which sucks, i just cant find a good option
 - [ ] ban baby zombies. they're bullshit and i can't be arsed making the textures for them.
-- [ ] Add the thing into the datapack (do i even have one of those) to make ruined portals surface always
-- [ ] Could also try to remove powdered snow with Featurify, or a mod, or… like i dont think i need those mods necessarily, the things i want to do have mods already, its more of a future proofing thing. ANYWAY just see if you can get rid of lava pockets and powdered snow or if you need to do something else
-- [ ] start looking into more gameplay balancing stuff like Enchancements and its config
+- [x] Add the thing into the datapack (do i even have one of those) to make ruined portals surface always
 - [x] fix inventory spyglass slot to have the correct background colour
 - [ ] search for 'planned' and implement or update entries, periodically.
 - [ ] Leaving the game paused and alt-tabbed, and coming back, makes the fog come super close. it fades back to reasonable after a few seconds. NO clue what that's about.
@@ -41,48 +42,63 @@ I'm honestly considering using shine 2.0.
 - [x] Finalise a pack description and unify it between modrinth, and github, clearing it from here, making sure you include a link to this page and a credit explanation section
 - [x] remake vanilla tweaks using website to take out twinkling stars, hunger apples, GUI buttons, tool durabilities, and tooltip, and clean up the dupe file while you're there
 - [ ] Add overlay logic onto Create's blocks where it makes sense to do so (i.e tuff and deepslate gen next to ochrum...)
-- [ ] look into a decent PBR pack to pair with shaders, or dont fucking bother yknow
-- [ ] whatever resource pack manager mod you use, you should be able to make a preset or hide irrelevant packs or lock in packs or something, so do that
-- [ ] I'd like variations or at least random rotation of the ice texture for places like ice spikes.
-- [ ] Continue and wrap up the biome colorations in my pack
+- [ ] migrate to a resource pack management mod that lets you hide / lock things for the full release
 - [x] fix up the create gui buttons to match the 26.2 format
 - [ ] debate setting up very minor "lore" and a starting structure, like satisfactory.
-- [ ] maybe reinstate voxy worldgen on release even though it has the OOM bug. casual players are unlikely to run into it...
 
 #### Waiting for help
 
-sandw of Overlay's is working on a fix for the issue... i'm gonna clear out all my stuff and wait for that before i try to do any more work with it, at which point i can remake the folder in documents to match modern too
+Waiting for BBE to fix their shading [issue](https://github.com/EdeenMC/betterblockentities/issues/145)
+
+waiting for interactive foliage to blacklist lichen [here](https://github.com/Kart0/mc2-interactivefoliage/issues/21)
+
+Waiting for mellow shader to fix their [weird fog issue](https://codeberg.org/TheCMK/mellow-shader/issues/232)
+
+https://github.com/anyttng/toroidal_world/issues/48
+map atlas toroidal compat request
+
+DH + toroidal stack is nearly complete, but i want to test how map atlas will respond, and i lowkey just have to wait for them to look into leaf colouring...
+
+https://github.com/Qendolin/better-clouds/issues/386
+better clouds just fully shit itself so that's nice
+
+sandw of Overlay's may implement my changes... if not i can ask for permission to use my changed version of the beta. we'll see.
+
+Waiting to see if I Like Vanilla will consider [supporting vanilla fog and sky colours](https://github.com/What42Pizza/I-Like-Vanilla/issues/51)
+
+Waiting for Saros worldborder customiser to fix its version reporting
 
 [voxy worldgen pause screen OOM crash](https://github.com/iSeeEthan/voxy_worldgen_v2/pull/93)
 voxy worldgen is on hold until fixed
 
 [Game close thread hang issue with Flywheel](https://github.com/ZurrTum/Create-Fly/issues/357)
 Until this is resolved, I will be implementing the mentioned workaround that disables GPU rendering, however I don't want to ship this modpack until a solution is found because of the potential performance issues. when that happens, re-test shaders for compatibility.
+IT'S HAPPENING OH GOD lmao uh oh. uh ohhhh
+i like vanilla will be fine, but
+photon can be patched (photon 1.3a) but there's also [this](https://github.com/djefrey/photon) fork that keeps compat with voxy (maybe even DH is exclusive to this?) though its 5 months out of date from main
+"**Tip**: it's common for shaderpacks to disable Entity Shadows or Block Entity Shadows by default. Make sure that those options are toggled if you want Create contraptions to cast lights and shadows (and don't forget to toggle the required options for light casting in the shaderpack settings !)."
 
 [dadget's animal villagers nesting issue](https://github.com/draklorx/animalkin_villagers/issues/2)
 once this is merged i can remove the fix from my own surface-level pack
 
-fancymenu is shitting itself with Wakes. wait for wakes author to pony tf up and then reinstate it (then i have to tell fancymenu guy to take away the incompat marker) though artshade, if it fixes its problems, has its own wakes...
-
-I put in a bug report to ARTSHADE for the fusion overlay misbehaviour, they saw it, we wait and see.
-
-waiting for permission from dr7 (or no permission, depending) on using the 26.2 sodium port in the pack. apparently they've been MIA for a while now.
+fancymenu is shitting itself with Wakes. wait for wakes author to fix and then reinstate it (then i have to tell fancymenu guy to take away the incompat marker)
 
 #### It's just cooked
+
+https://github.com/Qendolin/better-clouds/issues/385
+if this is fixed it MIGHT be worth trying to get them working but like its so much work for this lol
 
 Air Gap Fix not working on Create blocks is a shame but create being what it is, and create fly being a fork, I don't think it's even worth reporting the issue considering I don't know precisely the problem.
 
 Snowy leaves mod not playing nice with world generation for some reason. the author is as befuddled as I am. I don't expect a fix any time soon.
 
-### Git
-
-https://modpack-dev-knowledgebase.github.io/modpack-dev-wiki/wiki/useful-mods/performance/26.1/fabric/
-handy wiki!
+waiting for permission from dr7 (or no permission, depending) on using the 26.2 sodium port in the pack. apparently they've been MIA for a while now.
+### Git/Modrinth/Version Management
 
 Basically use Git to store listing and information but not whole mods or resourcepacks so as not to break terms.
 
 [the git](https://github.com/123happily/Create-Lemonade)
-how to push to git (DO IT AFTER YOU CHANGE THE FILES LMAO):
+how to push to git
 git add .
 git commit -m "commit name"
 git push -u origin main
@@ -91,21 +107,15 @@ sick
 i've never used git before
 please be kind
 
-the recommended method is pushing to a branch for changes (git branch -M whateverthebranchnameis) and then merging to main when you're happy, but lowkey i dont think i need to do this?
-i might make two branches for shader or no shader if i can't figure out a way to swap in-game
-grim situation though
-
-*don't include shaders in your pushes, but do include their configs, with a smart gitignore!!!!!!!*
-
-### Modrinth
+https://gist.github.com/jeffjohnson9046/80bc182db7ae2f4a6150
+my dumbass needs this
 
 When you export from Prism, selecting the folders i.e mods, resourcepacks correctly converts them to Modrinth dependencies instead of packaging the raw files, or at least it does something close enough.
 
 I have to zip my datapack before distributing, but my resource pack seems to make it through unharmed, which is nice. Yeah basically it modrinth links everything it can and then adds anything it couldn't as files. Nice.
-
 ### Pack Resource and Data Pack
 
-**biome stuff**
+#### Biome Coloration - on hold... DH being annoying...
 I can adjust biome-based sky, leaf, grass, and other foliage colors, and [more](https://github.com/MehVahdJukaar/polytone/wiki/Environment-Attributes), so it's probably ideal to keep track of what I've been up to...
 
 Oak leaves for some reason eats the biome-based simple configurations alive, so I can't really use a full colormap for those. Everything else is fair game though.
@@ -119,200 +129,44 @@ TO DO:
 - change birch default to something slightly darker for sanity
 - set up their colormaps since we're knuckling down on this idea again
 - run through biomes and nail down looks for them, testing with all leaves and litter for anything horrendous
-- muck around with adding https://modrinth.com/mod/falling-leaves-plus which is better than subtle effects' in that it has leaf-type-specificity and high customisability and worse in that they don't land on water but I think we'll all be ok. they honestly still might if it works how i imagine.
 
 Clifftree's Snowy Old Growth Taiga is a frosty blue.
 Taiga is a rich green.
+
+#### Villager Trade Rebalance - My Version
+
+Changes are inspired by the vanilla [Villager Trade Rebalance](https://minecraft.wiki/w/Villager_Trade_Rebalance) datapack.
+note that enchanted items are removed from villager pools by Enchancement. books are still sold but aren't villagertype specific, see what you can do.
+#### Other Changes
+
+I've made it so that Ruined Portals never spawn underground, effectively doubling their above-ground spawn rate, partly because I think it's cool, and partly because I have half a mind to incentivise lighting nether portals exclusively in RP frames.
 
 ## stuff i might throw in later
 
 #### worldgen musings
 
-I wish i could limit the viable seeds to a pool i controlled, alas.
-even then, there's only a few continent seeds i've found that feel worthy of being put on the pregen pedestal.
-and it does limit me from introducing other improvements...
-i think ...
-fuck, but i want the world border! turning that on or off isn't going to be just one setting.
-and i'm afraid that any random seed won't have all structures/biomes within 5kx5k. i'd almost certainly have to throw away ocean scaling to the level that continents does it in order to ensure this... unless there's a way to autoset the border larger... something like 10k...
-https://modrinth.com/mod/starter-items
-there we go.
-
-*If I don’t like tectonic, I could do these:*
-https://www.curseforge.com/minecraft/mc-mods/old-continents
-Adds a slider for ocean size, tested compatible with toroidal world
-https://modrinth.com/datapack/continents
-Alternative continent generation, no clue if it likes toroidal, dont see why not
-https://modrinth.com/datapack/larger-biomes/gallery
-makes biomes 2x larger instead of 4x like in LB. completely breaks seed parity fyi
-https://modrinth.com/mod/abridged/gallery
-Mainly its here cause it says it gets ‘funky’ with tectonic installed lol
-
-https://modrinth.com/mod/latitude
-Its an option for temperature banding, though it blocks off the world in its own ways (no looping). Compatible with clifftree and tectonic. Messes with some surface features as well. its trying to be a huge thing
-https://modrinth.com/mod/natural-temperature
-The less intensive one. Shits itself with atmospherics (noted…)
-
-bordering:
-https://modrinth.com/mod/world-border
-The thing that lets you do looping borders
-https://modrinth.com/datapack/legacywb-5120x
-auto-sets the vanilla border to 5120 blocks
-https://modrinth.com/mod/saros-worldborder-customizer
-change worldborder colour and animate it a bit
-https://modrinth.com/resourcepack/better-worldborder/gallery
-make it look a bit nicer
-https://modrinth.com/resourcepack/simplified-border
-minimises the look severely, might help to telegraph that you can go through.
-https://modrinth.com/resourcepack/border-makeover
-more options, many in the one file lol. 4 and 9 look nice
-
-https://modrinth.com/mod/treeplacer
-Unclear if i even need this for clifftree. Go to a custom clifftree biome and test it… seems easy enough to make a compat file though.
-
-https://modrinth.com/mod/azalea-growth-control
-I’m thinking about it. Would need config for clifftree support
-
-https://modrinth.com/mod/improved-village-placement
-If i dont use structurify’s method
-
-https://modrinth.com/mod/better-lava-lakes
-Sick
-
-https://modrinth.com/mod/muddywaters
-Slowly turns water-adjacent dirt to mud
-
 I want some more structures maybe? But almost all of the mods are doing way too much
-
-https://modrinth.com/datapack/amplified-nether
-
-https://modrinth.com/mod/nomorepowder
-pros: gets rid of powdered snow without fully removing it from the game
-cons: AI slop
 #### Gameplay
 
-https://modrinth.com/mod/biome-spreader/gallery
-Adds items with which to werf flammen- spread biomes, though its somewhat limited and i might have to add recipes to support clifftree, based off this datapack format…
+afaik there's no way to automatically set up a creative copy of a world, the best i could do is write wiki instructions on how to get started and then have some advancements that only trigger once you're in creative mode to explain the rest.
 
-https://modrinth.com/mod/instant-portal-nether
-
-https://modrinth.com/mod/harous-netherite-shulkers
-compat is a question.
-
-https://modrinth.com/mod/small-netherite-beacons
-
-https://modrinth.com/mod/netherite-lava
-makes full netherite give you fire resistance, but ticks its durability
-https://modrinth.com/mod/enhanced-netherite-armour
-alternative that also does horse armour
-
-the thing to get wandering traders to go away lol
-
-https://modrinth.com/mod/wikiful
-show pop-ups with handy info when the user finds an item, and add a menu-accessible wiki. handy to explain changes in the pack in-game, but might cause headaches with my create gui theming.
-
-https://modrinth.com/datapack/call-your-happy-ghast
-fym 'needs cheats to work'. test.
-
-https://modrinth.com/datapack/low-end-gravity
-kinda a wicked idea for something with 6 fucking downloads
+Pet Changes Potentially
+https://modrinth.com/mod/ppetp fixes long range teleport/stuck in unloaded chunks without performance hit (nice)
+https://modrinth.com/mod/respawnable-pets adds item to mark pets as respawnable with you on sleep. no clue if it works consecutively
+https://modrinth.com/mod/indypets gives pets a third roaming mode aside from just following and sitting
+https://modrinth.com/mod/petprotect pet damage prevention really meant for multiplayer environments (will break balance by allowing wolves to attack zombies without taking any damage for instance)
 
 https://modrinth.com/mod/reliable-requiem
 VERY comprehensive death penalty- WHOAH. penalties-upon-death mod
-
-purpur packs go
-[Copper Block Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-copper-block-beacon-base)  
-[Blasting Smelts Glass [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-blasting-smelts-glass)  
-[Axe Effective Skulls [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-axe-effective-skulls)  
-[Silk Touch Reinforced Deepslate [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-silk-touch-reinforced-deepslate)  
-[Rebalanced Piglin Bartering [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-rebalanced-piglin-bartering)  
-[Axolotls Ignore Passives [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-axolotls-ignore-passives)  
-[Redstone Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-redstone-beacon-base)  
-[Lapis Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-lapis-beacon-base)  
-[Amethyst Beacon Base [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-amethyst-beacon-base)  
-[Looting Shears [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-looting-shears)  
-[[PurpurPack] Stonecutter Cuts Wood - Slabs and Stairs - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-slabs)  
-[[PurpurPack] Stonecutter Cuts Wood - Doors and Trapdoors - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-doors)  
-[Stonecutter Buttons and Pressure Plates [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-stonecutter-cuts-buttons)  
-[Silk Touch Budding Amethyst [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-silk-touch-budding-amethyst)  
-[Pickaxe Effective Reinforced Deepslate [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-reinforced-deepslate)  
-[Pickaxe Effective Glass [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-glass)  
-[Pickaxe Effective Light Source Blocks [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-light-source-blocks)  
-[Hoe Effective Cactus [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-hoe-effective-cactus)  
-[Transparent Blocks In Enchant Area [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-transparent-blocks-in-enchant-area)  
-[Breed Axolotl With Tropical Fish Item [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpack-breed-axolotl-with-tropical-fish-item)  
-[Hoe Effective Froglights [PurpurPack] - Minecraft Data Pack](https://modrinth.com/datapack/purpurpacks-hoe-effective-froglights)
 #### bugfix/util
 
 https://github.com/D3ADK1LLSH0T/config-presets
 this would be an absolute GODSEND if it was updated to 26.2. GOD. SEND. i'm following it twice lol.
-
-https://modrinth.com/mod/netherportalfix
-
-maybe a mod to well and truly piss realms off
-
-https://modrinth.com/datapack/simple-homing-xp
-https://modrinth.com/mod/instant-xp-gain
-one of these. the former is probably heavier but more widely compatible and less confusing so i'm leaning towards that
 #### graphics
-
-https://modrinth.com/mod/mc2-interactive-foliage
-apparently this can make them wave in the wind
-
-https://modrinth.com/mod/big-water/gallery
-Awesome solution to water textures being so tiled. Check compat with wakes’ flowing water and obviously artshade will overwrite but maybe complementary will preserve it.
-
-https://modrinth.com/resourcepack/water-caustics
-seriously unsure about its performance and its shader compatibility
-
-https://modrinth.com/resourcepack/natural-textures
-could be handy. at the very least will explain how to spin ice
-
-https://modrinth.com/mod/fancy-toasts
-alternative to advancement plaques. you can do custom textures, i probably would want to given the "best" one is actually a terraria themed thing lol
-https://modrinth.com/resourcepack/createful-plaques
-if i go with advancement plaques
-
-os's colorful grasses are alright but also a bit much at times and hard to work with with extreme biome colorings. so...
-https://modrinth.com/resourcepack/rads-lush-foliage
-maybe we can hit it with a bit of this and a bit of
-https://modrinth.com/resourcepack/foliage-tint
-and a bit of
-https://modrinth.com/resourcepack/slightly-better-foliage-colors.
-
-https://modrinth.com/resourcepack/vanilla-exp/gallery has variated grass and hopefully the ability to turn most of the rest of the stuff off,
-
-https://modrinth.com/resourcepack/colorful-fleurs/gallery
-this might work with 
-https://modrinth.com/resourcepack/foliage-tint/gallery
-neither of which would work with https://modrinth.com/resourcepack/better-foliage/gallery which is pretty cool though. i wonder if it would spawn the same one for each 'cluster' (it will)
-
-https://modrinth.com/resourcepack/flower-clusters
-can't forget this!
-
-https://modrinth.com/resourcepack/more-nether-roots also...
-
-https://modrinth.com/resourcepack/os-variated-glow-lichen
-would have to change vanilla tweaks so its not a 3d model in there anymore
-
-https://www.planetminecraft.com/texture-pack/3d-breaking/
-this is so old there's no way right
 
 punchy/hyper punchy
 i'm just unsure how it'll feel. will probably need create skyhook compat whatever whatever
-
-https://modrinth.com/resourcepack/particles-updated/gallery
-particle... effects ... poti... on...
-
-https://modrinth.com/resourcepack/brays-better-3d-bow/gallery
-if i care
 #### Waiting/'maybe'/misc
-
-https://modrinth.com/mod/toroidal-world
-if this fixes its bugs/voxy incompatibility/streams incompatibility i'll seriously consider it.
-
-https://modrinth.com/mod/not-enough-pots/gallery
-this is doing *too much* but i cant find anything better
-i swear i saw one for builders and didnt write it down noooo
 
 https://modrinth.com/mod/mc-day-counter
 https://modrinth.com/mod/betterdays
@@ -355,23 +209,13 @@ Crediting:
 The relevant link, author, license, and current state of inclusion in this pack are also noted.
 For more information on licenses, see [here](https://modpack-dev-knowledgebase.github.io/modpack-dev-wiki/wiki/info/licenses/) and [here](https://www.tldrlegal.com/). Note that even ARR-licensed projects hosted on Modrinth waive their right to exclusion from modpacks per [Modrinth's Terms of Use](https://modrinth.com/legal/terms), but I will respect explicit requests for exclusion or removal where present. Please [[Contact Me\|contact me]] if you want to discuss how your work is included in this pack, or if I've made any mistakes.
 
-As of current, I'm planning to license this pack under GPL due to the "Viral" nature of that license and my inclusion of content using it, or similar, licensing. I'm led to believe that using LGPL projects within a GPL pack is permissable via the license, but if I am wrong on that front, please contact me!
+Please note: This modpack is distributed with a built-in resource pack that duplicates and reorganises many assets found in other resource packs. This pack will not be distributed outside of this modpack, and all rights go to the original texture owners. Textures are not heavily modified, mainly renamed and their file structures changed so that they can function correctly on 26.2. All original resource packs are still included in the pack so they will recieve proper crediting and download counts. Please reach out if you have any issues with this approach.
 
-Template, chord 'tem' to insert
-```
-Author: 
-Type: Resource Pack/Mod/Other
-License: MIT/Public Domain/GNU GPL/LGPL/ARR/Custom/Modpack Permission Explicitly Given
-Purpose in Pack:
-Status: Planned/Added
-```
-'Planned' means the resource may or may not be included in future
-'Added' means it is included in the pack
-'HOLD' means it would be great to include, but I'm waiting on development changes or bug fixes
+As of current, I'm planning to license this pack under GPL due to the "Viral" nature of that license and my inclusion of content using it, or similar, licensing. I'm led to believe that using LGPL projects within a GPL pack is permissable via the license, but if I am wrong on that front, please contact me!
 
 Sections will be marked with :LiBadgeCheck: once they are unlikely to require further work. Or just... good enough for now and I should stop thinking about them.
 
-I'm also including a list of mods at the end that *aren't* included, why, and whether I suggest them to you or not.
+I'm also including a list of mods at the end that *aren't* included and why.
 
 ## Create
 *The core focus of the pack, thanks to Create Fly.*
@@ -404,13 +248,107 @@ License: MIT
 Purpose in Pack: Enable more automation
 Status: Added
 ## Balance/QoL
-*Removing stress and challenge, to let you focus on creativity and factory-building.*
+*Making things easier, making the pack work, with as few nerfs as possible*
+
+[Enchancement](https://modrinth.com/mod/enchancement)
+Author: MoriyaShiine, cybercat5555, RAT, EightSidedSquare, Up
+Type: Mod
+License: ARR
+Purpose in Pack: A radical approach to enchanting that adds enchantments, changes dynamics, balances things, removes tool durability, and fixes bugs.
+Status: Added
+*Heavily configured to remove some nerfing behaviour for the purposes of this pack*
+
+[0,5 HP](https://modrinth.com/datapack/0%2C5-hp)
+Author: BizCub
+Type: Mod
+License: MIT
+Purpose in Pack: You will survive all fall damage with half a heart.
+Status: Added
+
+[World Border](https://modrinth.com/mod/world-border)
+Author: Serilium
+Type: Mod
+License: ARR
+Purpose in Pack: Loop the player around the world when they contact the world border
+Status: HOLD (may not be needed)
 
 [Just Enough Recipes](https://modrinth.com/mod/jei)
 Author: mezz
 Type: Mod
 License: MIT
 Purpose in Pack: View recipes, including Create's
+Status: Added
+
+[Easy Shulker Boxes](https://modrinth.com/mod/easy-shulker-boxes)
+Author: Fuzs, LunaPixelStudios
+Type: Mod
+License: MPL-2.0
+Purpose in Pack: Make it far easier to interact with shulker boxes
+Status: Added
+
+[SilkTouch+](https://modrinth.com/mod/silktouch%2B)
+Author: Wheeler-Shigley
+Type: Mod
+License: GPL-3.0-or-later
+Purpose in Pack: Allow you to silk-touch spawners, budding amethyst, and more.
+Status: Added
+
+[Call Your Happy Ghast](https://modrinth.com/datapack/call-your-happy-ghast), [Horse](https://modrinth.com/datapack/call-your-horse), and [Nautilus](https://modrinth.com/datapack/call-your-nautilus)
+Author: Jodek
+Type: Mod
+License: MIT
+Purpose in Pack: Summon a named mount with a linked Goat Horn from anywhere - even unloaded chunks!
+Status: Added
+*Make sure to leash entities to the Happy Ghast starting with the Happy Ghast side, and they'll be teleported too!*
+
+[Faster Happy Ghast (FHG)](https://modrinth.com/datapack/faster-happy-ghast-fhg)
+Author: Jom3a
+Type: Mod
+License: MIT
+Purpose in Pack: Speeds up the Happy Ghast and lets you sprint with it!
+Status: Added
+
+[Small Netherite Beacons](https://modrinth.com/mod/small-netherite-beacons)
+Author: bsharou
+Type: Mod
+License: MIT
+Purpose in Pack: Sub in a netherite block under a beacon instead of having to build a full size beacon base.
+Status: Added
+
+[Enhanced Netherite Armour](https://modrinth.com/mod/enhanced-netherite-armour)
+Author: 
+Type: Resource Pack/Mod/Other
+License: MIT/Public Domain/GNU GPL/LGPL/ARR/Custom/Modpack Permission Explicitly Given
+Purpose in Pack: Gives you fire resistance when you have a full set of Netherite Armour - and it works for horse armour too (they float on lava)
+Status: Added
+
+[Harou's Netherite Shulkers](https://modrinth.com/mod/harous-netherite-shulkers)
+Author: bsharou
+Type: Mod
+License: MIT
+Purpose in Pack: Upgrade your shulker box with netherite to make it fire- and blast- proof.
+Status: Added
+
+[Blasting Plus](https://modrinth.com/datapack/blasting-plus) and [Smoking Plus](https://modrinth.com/datapack/smoking-plus)
+Author: greenclaw
+Type: Mod
+License: GPL-3.0-only
+Purpose in Pack: Make more Vanilla smelting recipes work in the Blast Furnace and Smoker.
+Status: Added
+
+[Biome Spreader](https://modrinth.com/mod/biome-spreader)
+Author: Masy
+Type: Mod
+License: GPL-3.0-only
+Purpose in Pack: Allows the crafting of potions that let you change the biome in a radius, handy for builders who want to have more control over their world
+Status: Added
+*I will modify this to have some CliffTree biomes accessible as well :)*
+
+[1.16.1 Ender Pearl Rates](https://modrinth.com/mod/1.16.1-ender-pearl-rates)
+Author: TJOAT
+Type: Mod
+License: MIT
+Purpose in Pack: Makes Ender Pearls a more common result from bartering.
 Status: Added
 
 [Air Gap Fix](https://modrinth.com/datapack/air-gap-fix)
@@ -463,6 +401,34 @@ License: MIT
 Purpose in Pack: Let you wear a chestplate and elytra at the same time.
 Status: Added
 
+[Stretchy Leash](https://modrinth.com/mod/stretchy-leash)
+Author: Estecka
+Type: Mod
+License: MIT
+Purpose in Pack: Let leashes stretch more before breaking, and give led entities a step-height boost.
+Status: Added
+*Works so well I couldn't even get a leash to break!*
+
+[Instant Portal Nether](https://modrinth.com/mod/instant-portal-nether)
+Author: JeanGomez
+Type: Mod
+License: MIT
+Purpose in Pack: No more waiting 4 seconds to travel through the nether portal.
+Status: Added
+
+[Better Days](https://modrinth.com/mod/betterdays)
+Author: wendall911
+Type: Mod
+License: LGPL-3.0-or-later
+Purpose in Pack: Make days and nights a solid 20 minutes each, and lets you sleep a little earlier (per my config - this mod can do a lot more!)
+Status: Added
+
+[SleepWarp (Updated)](https://modrinth.com/mod/sleep-warp-updated)
+Author: Patbox, Giggitybyte
+Type: Mod
+License: MPL-2.0
+Purpose in Pack: Tick the game as you sleep so that furnaces process and crops grow. Watch the moon set and the sun rise. Makes sleeping take a little longer, but rewards you for it, instead of phantoms punishing you for not doing it.
+Status: Added
 ## Aesthetics
 *Simple, stylistic flair and atmosphere, unified with the Create aesthetic.*
 #### **Menus**
@@ -475,13 +441,12 @@ Purpose in Pack: Allow extensive customisation of the main menu (and more!)
 Status: Added
 *Control + Alt + C brings up the configuration menu!*
 
-[SpiffyHUD](https://modrinth.com/mod/spiffyhud)
-Author: Keksuccino
+[Fancy Toasts | Better Advancements](https://modrinth.com/mod/fancy-toasts)
+Author: Bivrik
 Type: Mod
-License: DSMSLv3.1
-Purpose in Pack: Allow extensive customisation of the in-game hud
+License: MIT
+Purpose in Pack: Greatly improve the look of advancements, customisable with resource packs.
 Status: Added
-*This doesn't work with the improved hotbar mod, but Raised doesn't work with FancyMenu, so I sort of have to choose one or the other. I've just left this disabled for now.*
 
 [Inventory Blur](https://modrinth.com/mod/inventory-blur)
 Author: enchanted-games
@@ -545,6 +510,13 @@ Author: Crendgrim
 Type: Mod
 License: LGPL-3.0-only
 Purpose in Pack: Dynamically hide and change the crosshair depending on what you're looking at - or not looking at.
+Status: Added
+
+[Day Counter](https://modrinth.com/mod/mc-day-counter)
+Author: 02Alexis
+Type: Mod
+License: [Custom](https://github.com/02A1exis/02A1exis/blob/main/licenses/protective-license.md)
+Purpose in Pack: Keep track of the days with a typewriter-ish counter each morning, and celebrate big milestones with sfx.
 Status: Added
 
 [Smooth Swapping](https://modrinth.com/mod/smooth-swapping)
@@ -624,6 +596,13 @@ License: MIT
 Purpose in Pack: Make your footsteps sound much better. Fork with slightly less features, and therefore, dependencies, for simplicity.
 Status: Added
 
+[Raise Sound Limit Simplified](https://modrinth.com/mod/rsls)
+Author: ishland
+Type: Mod
+License: MIT
+Purpose in Pack: Make the sound engine perform better and have more capability.
+Status: Added
+
 #### **General Rendering**
 
 ##### **Setup**
@@ -639,7 +618,15 @@ Status: Added
 Author: cortex
 Type: Mod
 License: ARR + Modpack Permission Explicitly Given
-Purpose in Pack: Enable ridiculously long view distances with minimal performance impact. If you have performance issues, keep this and set it to like 32 chunks and your real render distance to like 5, and it'll still be better than playing without it.
+Purpose in Pack: Enable ridiculously long view distances with minimal performance impact.
+Status: HOLD in favour of:
+*Note: Requires 1 lower version of Iris to run, should probably try dropping back a version and see if that fixes the leaf colours*
+
+[Distant Horizons](https://modrinth.com/mod/distanthorizons)
+Author: jeseibel and many more!
+Type: Mod
+License: LGPL-3.0-only
+Purpose in Pack: Enable long view distances, now quickly proactively generated with 3.3's extra features. In tests, this actually performed better than Voxy in terms of framerate, and had comparable visuals.
 Status: Added
 
 [Voxy Worldgen](https://modrinth.com/mod/voxy-worldgen)
@@ -709,6 +696,14 @@ Status: Added
 
 (This is where I'd put my Colorwheel. If I had one)
 
+[Entity View Distance](https://modrinth.com/mod/entity-view-distance)
+Author: Patbox
+Type: Mod
+License: LGPL-3.0-only
+Purpose in Pack: Lets you see entities further away, to compensate for low vanilla render and high LOD render distance.
+Status: Added
+*Feel free to increase it in the video settings if you feel it isn't enough*
+
 ##### **Particles**
 
 [Particle Rain](https://modrinth.com/mod/particle-rain)
@@ -725,7 +720,7 @@ Type: Mod
 License: ARR
 Purpose in Pack: Add more effects. Also fades out night vision, lowers fire overlay, somewhat clears fire overlay when you have fire resistance, somewhat clears potion particle opacity based on distance to player, and more.
 Status: Added
-*Many effects that I feel don't suit the look or are too intrusive have been disabled. Others have been reduced in intensity or likelihood. Will disable 'allow using blended render type' if issues around particle transparency occur. Particle culling has been disabled to reduce issues with existing particle culling mods. Some features, like the falling leaves, splahes, waterfalls, and fireflies, have been given to Particular.*
+*Many effects that I feel don't suit the look or are too intrusive have been disabled. Others have been reduced in intensity or likelihood. Will disable 'allow using blended render type' if issues around particle transparency occur. Particle culling has been disabled to reduce issues with existing particle culling mods. Some features, like the splahes, waterfalls, and fireflies, have been given to Particular.*
 
 [Particular](https://modrinth.com/mod/particular-reforged)
 Author: Leclowndu93150
@@ -747,6 +742,28 @@ Author: Goby56
 Type: Mod
 License: GPL-3.0-only
 Purpose in Pack: Add neat wakes to water when interacted with
+Status: HOLD
+*Has breaking incompatibility with FancyMenu...*
+
+[Falling Leaves Plus](https://modrinth.com/mod/falling-leaves-plus)
+Author: Fuzs
+Type: Mod
+License: MPL-2.0
+Purpose in Pack: Provide varied and well animated falling leaves.
+Status: Added
+
+[Particle Effects](https://modrinth.com/mod/particle-effects)
+Author: K-TEAM, KlashRaick, LopyMine
+Type: Mod
+License: CC-BY-ND-4.0
+Purpose in Pack: Allows resource packs to specify particles for each kind of potion/effect
+Status: Added
+
+[Particles Updates](https://modrinth.com/resourcepack/particles-updated)
+Author: zCore, zdkrr
+Type: Resource Pack
+License: CC-BY-NC-SA-4.0
+Purpose in Pack: A resource pack for the aforementioned Particle Effects
 Status: Added
 
 ##### **Animations**
@@ -794,23 +811,43 @@ License: Lambda License
 Purpose in Pack: Make glowing blocks cast light around them
 Status: Added
 
-[Sunbathing Godrays](https://modrinth.com/resourcepack/sunbathing-godrays)
-Author: MedVahdJukaar, BeagleNF404
+[Glowix](https://modrinth.com/resourcepack/glowix)
+Author: CreepyWe
 Type: Resource Pack
-License: MIT
-Purpose in Pack: Add godrays even when shaders aren't enabled
+License: ARR
+Purpose in Pack: Add emission to some blocks
 Status: Added
+*Glowing ores are off by default - turn them on if you prefer that!*
 
 ##### **Overlays, Variations, and Connected Textures**
 *Due to technical limitations, overlays don't work with connected textures via Continuity or Fusion, so overlays are being prioritised for the forseeable future*
 
-i dont know mannnn im in hell
+[Overlay's](https://modrinth.com/resourcepack/overlays)
+Author: itzSandw
+Type: Resource Pack
+License: Custom EULA
+Purpose in Pack: Enable cool transitions between blocks
+Status: Added; **Waiting for update to be pushed**
 
 [Glowy Nether Portals](https://modrinth.com/resourcepack/glowy-nether-portals)
 Author: zpez
 Type: Resource Pack
 License: ARR
 Purpose in Pack: Make nether portals look cooler
+Status: Added
+
+[Snow & Moss Overhangs](https://modrinth.com/resourcepack/snow-and-moss-overhangs)
+Author: Devoxxel
+Type: Resource Pack
+License: MIT
+Purpose in Pack: Make snow and moss layers overlay onto blocks below them.
+Status: Added
+
+[Natural Textures](https://modrinth.com/resourcepack/natural-textures)
+Author: spiderbat
+Type: Resource Pack
+License: ARR
+Purpose in Pack: Provide variation to various blocks by rotating them in a vanilla-friendly way.
 Status: Added
 ##### **Mobs**
 
@@ -828,11 +865,33 @@ License: MIT
 Purpose in Pack: FA-compatible creeper redesign
 Status: Added
 
+[Hellay's Redone Endermans](https://modrinth.com/resourcepack/redone-endermans) & [X Fresh Animations](https://modrinth.com/resourcepack/redone-endermans-fa)
+Author: \_Hellay
+Type: Resource Pack
+License: ARR
+Purpose in Pack: Make endermen glow and look cooler
+Status: Added
+
+[Glowing Ender Dragon](https://modrinth.com/resourcepack/glowing-ender-dragon)
+Author: Eianex
+Type: Resource Pack
+License: MIT
+Purpose in Pack: Make the ender dragon glow and look cooler
+Status: Added
+*I made a duplicate of this in the modpack resource pack to make the emission work a little better and stop z-fighting*
+
 [ButterBee x Fresh Animations](https://modrinth.com/resourcepack/butterbee-fresh)
 Author: Konci
 Type: Resource Pack
 License: CC-BY-NC-SA-4.0
 Purpose in Pack: FA support for ButterBee's Mob Variants
+Status: Added
+
+(Optional) [Arachnophobia Mode](https://modrinth.com/resourcepack/arachnophobia-mode-red-text)
+Author: Maxsteelbro
+Type: Resource Pack
+License: MIT
+Purpose in Pack: Give users the option to turn spiders into floating bits of text that just say 'spider' (inspired by Lethal Company)
 Status: Added
 
 [Dadget's Animal Villagers](https://modrinth.com/resourcepack/dadgets-animal-villagers)
@@ -871,6 +930,27 @@ License: ARR
 Purpose in Pack: Make inventories more interesting with amount-concious item textures
 Status: Added
 
+[Unique Goat Horns](https://modrinth.com/resourcepack/unique-goat-horns)
+Author: Cubeoidal
+Type: Resource Pack
+License: CC-BY-NC-SA-4.0
+Purpose in Pack: Make the goat horns look different
+Status: Added
+
+[Bray's Better Bow & Arrows](https://modrinth.com/resourcepack/brays-better-3d-bow)
+Author: Braytonks
+Type: Resource Pack
+License: ARR
+Purpose in Pack: Improve the look of bows and crossbows.
+Status: Added
+
+[Axolotl Buckets](https://modrinth.com/mod/axolotl-buckets)
+Author: Roundaround
+Type: Mod
+License: MIT
+Purpose in Pack: Display axolotls in buckets correctly
+Status: Added
+
 ##### **Blocks**
 
 [Better Enchanting Table](https://modrinth.com/resourcepack/better-enchanting-table)
@@ -885,6 +965,13 @@ Author: miau_the_cat
 Type: Resource Pack
 License: MIT
 Purpose in Pack: Make beacons look a bit nicer.
+Status: Added
+
+[Glowing End Portal](https://modrinth.com/resourcepack/glowing-end-portal)
+Author: AnolXD
+Type: Resource Pack
+License: ARR
+Purpose in Pack: Makes ender portal frames look nicer
 Status: Added
 ##### **Grass/Leaves/Plants/Ground Cover**
 
@@ -948,6 +1035,13 @@ License: ARR
 Purpose in Pack: Make grass really bushy and lush.
 Status: Added
 
+[More Nether Roots](https://modrinth.com/resourcepack/more-nether-roots)
+Author: \_daggsy\_
+Type: Resource Pack
+License: CC-BY-NC-ND-4.0
+Purpose in Pack: Gives nether roots some cool variations.
+Status: Added
+
 [Lily Padding](https://modrinth.com/resourcepack/lily-padding)
 Author: witheredwasabi
 Type: Resource Pack
@@ -969,6 +1063,14 @@ License: ARR
 Purpose in Pack: Make leaf litter less obviously tiled
 Status: Added
 *You might notice that leaf litter follows biome colour - that's actually my pack sitting on top and changing the colormap with Polytone!*
+
+[Interactive Foliage](https://modrinth.com/mod/mc2-interactive-foliage)
+Author: Kart0, RazorPlay01
+Type: Mod
+License: ARR
+Purpose in Pack: Make leaves and grass wave in the wind, along with moving when entities interact with them
+Status: HOLD
+*Waiting for 2.0 to release*
 ##### **Create**
 
 [Create Ultra](https://modrinth.com/resourcepack/create-ultra-pbr)
@@ -1009,6 +1111,13 @@ Status: Added
 
 ##### **Other**
 
+[Saros Worldborder Customizer](https://modrinth.com/mod/saros-worldborder-customizer)
+Author: Saroscesch
+Type: Mod
+License: ARR
+Purpose in Pack: Enable more customisation of the world border
+Status: HOLD (may not need)
+
 [3D Skin Layers](https://modrinth.com/datapack/low-end-gravity)
 Author: tr7zw
 Type: Mod
@@ -1022,7 +1131,15 @@ Type: Resource Pack
 License: Custom + Modpack Permission Explicitly Given
 Purpose in Pack: Provide various texture-related fixes and tweaks!
 Status: Added, may be tweaked/re-downloaded in future
-*By default this will be loaded lowest to avoid compatability issues - it just does so much!*
+*Will be loaded low to avoid compatability issues - it just does so much!*
+
+[Vanilla Experience+](https://modrinth.com/resourcepack/vanilla-exp)
+Author: 
+Type: Resource Pack/Mod/Other
+License: MIT/Public Domain/GNU GPL/LGPL/ARR/Custom/Modpack Permission Explicitly Given
+Purpose in Pack: Improve a few things like walls, items, and round logs
+Status: Added
+*Will be loaded low and have many features disabled via the config to just keep the best things for this pack!*
 
 [Better Entity Shadow](https://modrinth.com/resourcepack/better-shadow-entity!)
 Author: NelA470
@@ -1031,12 +1148,19 @@ License: CC-BY-NC-ND-4.0
 Purpose in Pack: Make entity shadows squared instead of round
 Status: Added
 
+[Sun & Moon Fusion](https://modrinth.com/resourcepack/sun-moon-fusion)
+Author: OrkaMC
+Type: Resource Pack
+License: CC-BY-NC-SA-4.0
+Purpose in Pack: Make the sun and moon look cooler :)
+Status: Added
+
 [Better Clouds](https://modrinth.com/mod/better-clouds)
 Author: qendolin
 Type: Mod
 License: MPL-2.0
 Purpose in Pack: Improve the look of clouds by making them dynamic and fluffy whilst still keeping a blocky style.
-Status: Added
+Status: HOLD (sort of buggy atm)
 
 [Cosmos](https://modrinth.com/mod/cosmos-mod)
 Author: Hollowed, TheTyphothanian
@@ -1060,54 +1184,61 @@ Purpose in Pack: Make the pumpkin blur easier to see through and more vanilla-st
 Status: Added
 
 #### **Shaders**
-*Focused on gameplay with a requirement of stable 60FPS on my system in ideal conditions (standing still in a plains biome). These have been configured for a Vanilla/Dungeons inspired look.*
-==Note: Rainbow's Foliage causes decent performance hits with shaders enabled.==
-Some of these shaders may be tossed to the wayside at a later date because of a lack of Colorwheel support.
+Boring disclaimer
+	*Due to the absence of Colorwheel for 26.2, shaders won't fully integrate Create contraptions into their shadows and lights. If Colorwheel does release for 26.2, Mellow should work by default, but I can't say how well Photon will move over*
 
-[Complementary Shaders](https://modrinth.com/shader/complementary-reimagined) with [Euphoria Patches](https://modrinth.com/mod/euphoria-patches)
-*Complementary*
-Author: EminGT
-Type: Shaderpack
-License: Custom + Permission with Credit Granted
-Purpose in Pack: Provide high-end, customisable visuals
+[Photon](https://modrinth.com/shader/photon-shader)
+Author: sixthsurge
+Type: Shader
+License: none...?
+Purpose in Pack: A balance of performance and good visuals
 Status: Added
 
-*Euphoria*
-Author: SpacEagle17
-Type: Mod
-License: MPL-2.0
-Purpose in Pack: Allow further customisation and features
+[Mellow](https://modrinth.com/shader/mellow)
+Author: TheCMK
+Type: Shader
+License: MIT
+Purpose in Pack: Provide super performant and nice visuals
 Status: Added
 
-here's where i'd put my artshade... RAGH
-
-[BSL](https://modrinth.com/shader/bsl-shaders)
-Author: CaptTatsu
-Type: Shaderpack
-License: ARR
-Purpose in Pack: A bright, fun look.
-Status: Added
-*You will want to disable Better Clouds in the mod menu in-game! BSL also doesn't respect Clifftree's custom sky colours, so it may make biomes feel more same-y. It's just here to give you another option if you'd like.*
 ## World Generation
-*Changes to terrain and biomes, without adding any modded blocks or items, keeping a vanilla-ish feel. Currently in heavy / messy development.*
 
-Custom Seed Filter
+Custom Seed Filter (link pending)
 Author: Leclowndu
 Type: Mod
 License: N/A
-Purpose in Pack: Limit the potential world generation to a list of seeds sourced from MC@H and other sources.
+Purpose in Pack: Limit the potential world generation to a list of filtered seeds
 Status: Added
-*"Proof of purchase"*
-![Pasted image 20260916145124.png](/img/user/Attachments/Pasted%20image%2020260916145124.png)
+*Proof of purchase*
+![Pasted image 20260916145124.png|254](/img/user/Attachments/Pasted%20image%2020260916145124.png)
 *Proof that I am making the logos*
-![Pasted image 20260916145247.png](/img/user/Attachments/Pasted%20image%2020260916145247.png)
+![Pasted image 20260916145247.png|352](/img/user/Attachments/Pasted%20image%2020260916145247.png)
+*Proof of permission to upload to Modrinth*
+![Pasted image 20260916205015.png|425](/img/user/Attachments/Pasted%20image%2020260916205015.png)
 A huge thanks to Leclowndu for making this mod for me!
+
+*Information about seed filtering*
+	Using a [fork](https://github.com/SunnySlopes/cubiomes-viewer) of Cubiomes, I searched for seeds with all of the following features within 5120 blocks in any direction:
+	- All (vanilla) village types
+	- At least one Mansion
+	- At least 20% area covered by snowy, desert/badland, 'cold', and 'lukewarm' biomes, for good distribution
+	- At least 2% area with -0.75 erosion to ensure at least one very tall mountain i.e 180 blocks and up
+	- Particular rare or required biomes: Bamboo Jungle, Cherry Grove, Eroded Badlands, Flower Forest, Ice Spikes, Mangrove Swamp, Meadow, Mushroom Fields, Old Growth Birch Forest, Pale Garden, and Sunflower Plains
+	- Mushroom Fields and Pale Garden needed to take up 0.02% of world space - an attempt to make sure they are of reasonable size, though there can still be many small instances
+	The search doesn't reflect changes made by mods. I suspect these will play nice with CliffTree as it's quite responsive to the world seed.
 
 [CliffTree](https://modrinth.com/datapack/clifftree)
 Author: Penumbra
 Type: Mod
 License: CC-BY-NC-SA-4.0
 Purpose in Pack: Tweaks vanilla biomes and adds some new ones. Chosen for its reasonable use of vanilla blocks, high seed parity, and fun energy.
+Status: Added
+
+[Amplified Nether](https://modrinth.com/datapack/amplified-nether)
+Author: Stardust Labs
+Type: Mod
+License: [Custom License](https://github.com/Stardust-Labs-MC/license/blob/main/license.txt) (which includes Modpack Permission)
+Purpose in Pack: Make the Nether taller, more spacious, and easier to navigate - and also looks epic!
 Status: Added
 
 [Biome Dither](https://modrinth.com/mod/biome-dither)
@@ -1118,7 +1249,7 @@ Purpose in Pack: A biome surface-block random blend that's broadly compatible wi
 Status: Added
 
 [Streams Reflowing](https://modrinth.com/mod/streams-reflowing)
-Author: nice.john
+Author: nice.john aka. noodles
 Type: Mod
 License: ARR
 Purpose in Pack: Add differing-height lakes and flowing streams and rivers.
@@ -1131,6 +1262,14 @@ License: ARR
 Purpose in Pack: Add fun features to the landscape, procedural and vanilla-friendly.
 Status: Added
 *This has been modified with a datapack to reduce the occurence of very large rock structures. Underwater vents use campfires which I'm not obsessed with, but I can live with it.*
+
+[Better Lava Lakes](https://modrinth.com/mod/better-lava-lakes)
+Author: weboyee
+Type: Mod
+License: MIT
+Purpose in Pack: Make surface lava lakes look much better.
+Status: Added
+*I tried to confirm this was working, but couldn't find a surface lava pool, oh well*
 
 ## Minor Additional Content
 
@@ -1147,10 +1286,103 @@ Type: Mod
 License: Custom License + Modpack Permission Explicitly Given
 Purpose in Pack: Lets you dye spore blossoms and the particles they produce, great for builders wanting to tweak atmosphere.
 Status: Added
+
+[Reconnectible Chains](https://modrinth.com/mod/reconnectible-chains/gallery)
+Author: evanbones
+Type: Mod
+License: LGPL-3.0-or-later
+Purpose in Pack: Lets you string chains and leads between fences for decoration.
+Status: Added
+
+[Gardener's Dream](https://modrinth.com/datapack/gardeners-dream)
+Author: Gurkis
+Type: Mod
+License: ARR
+Purpose in Pack: Lets you plant all sorts of plants in all sorts of containers! It's got so many options, it's perfect for perfectionists.
+Status: Added
+
+[Banner Bedsheets](https://modrinth.com/datapack/banner-bedsheets) and [Banner Flags](https://modrinth.com/datapack/banner-flags)
+Author: Gurkis
+Type: Mod
+License: ARR
+Purpose in Pack: Allow you to use banners for bedsheets and flags.
+Status: Added
+*As these are really datapacks, there is some slightly janky behaviour, but the achievements do well to explain everything!*
+
+[Many More Banners](https://modrinth.com/datapack/many-more-banners)
+Author: moxvallix, wulfian
+Type: Mod
+License: CC-BY-SA-4.0
+Purpose in Pack: Add tons of useful and cool banner pattern options without adding items. Tested to work with the above Banner Bedsheets and Flags!
+Status: Added
+
+[Transparent Blocks in Enchant Area](https://modrinth.com/datapack/purpurpacks-transparent-blocks-in-enchant-area)
+Author: PurpurMC, granny, Rhythmic
+Type: Mod
+License: MIT
+Purpose in Pack: Lets you decorate your enchanting setup without worrying about losing power.
+Status: Added
+
+[Soft Leaves](https://modrinth.com/mod/soft-leaves)
+Author: Payangar
+Type: Mod
+License: ARR
+Purpose in Pack: Leaves slow you down instead of stopping you, breaking your fall, and making riding horses easier, complete with particles and sounds.
+Status: Added
+
+[Shear Leaf Litter](https://modrinth.com/datapack/shear-leaf-litter)
+Author: FerranV
+Type: Mod
+License: MIT
+Purpose in Pack: Leaf litter only drops when you shear it - no more clutter!
+Status: Added
+
+[Looting Shears](https://modrinth.com/datapack/purpurpacks-looting-shears)
+Author: PurpurMC, Rhythmic
+Type: Mod
+License: MIT
+Purpose in Pack: Lets you enchant shears with looting.
+Status: Added
+
+[Superior Stonecutter](https://modrinth.com/datapack/superior-stonecutter)
+Author: proxi
+Type: Mod
+License: MIT
+Purpose in Pack: Lets you do *way more* in the stonecutter - wood, wool, ice, clay, and all the stone types are much more translatable in a fair and balanced way.
+Status: Added
+*Create already has this functionality for its own blocks - so it's only fair!*
+
+[Wandering Trader May Leave](https://modrinth.com/mod/wandering-trader-may-leave)
+Author: Serilium
+Type: Mod
+License: ARR
+Purpose in Pack: Adds a button to peacefully dismiss the Wandering Trader.
+Status: Added
+
+[Shearable Vines](https://modrinth.com/mod/shearable-vines)
+Author: Roundaround
+Type: Mod
+License: MIT
+Purpose in Pack: Shear vines to stop them from growing.
+Status: Added
+
+[Axe Effective Skulls](https://modrinth.com/datapack/purpurpacks-axe-effective-skulls), [Pickaxe Effective Reinforced Deepslate](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-reinforced-deepslate), [Pickaxe Effective Glass](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-glass), [Pickaxe Effective Light Source Blocks](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-light-source-blocks), [Hoe Effective Froglights](https://modrinth.com/datapack/purpurpacks-hoe-effective-froglights), [Hoe Effective Cactus](https://modrinth.com/datapack/purpurpacks-hoe-effective-cactus)
+Author: PurpurMC, granny, Rhythmic
+Type: Mod
+License: MIT
+Purpose in Pack: Make various tools work on various things that make sense.
+Status: Added
+
+[Axolotls Ignore Passives](https://modrinth.com/datapack/purpurpack-axolotls-ignore-passives), [Breed Axolotl With Tropical Fish](https://modrinth.com/datapack/purpurpack-breed-axolotl-with-tropical-fish-item)
+Author: PurpurMC, granny, Rhythmic
+Type: Mod
+License: MIT
+Purpose in Pack: Stop axolotls from killing harmless squids and fish! And lets you feed them with fish from your hand instead of just from a bucket.
+Status: Added
 ## Performance/BugFixes/Utility/Other
 *The boring stuff that keeps it all working under the hood. I won't document the dependencies in this pack.*
 #### **Performance :LiBadgeCheck:**
-*A quick benchmark, with no other mods, at 10 render distance gets ~800 FPS on my 3060 mid-high range system. This is satisfactory enough for me to continue development off of this standard.*
+*A quick benchmark, with no other mods, at 10 render distance gets ~800 FPS on my 3060 mid-high range system. This is satisfactory enough for me to continue development off of this standard. Note that some mods here use multi-threading, which may not work well on CPUs with fewer threads. Disable c2me and see if that improves things.*
 
 [Sodium](https://modrinth.com/mod/sodium)
 Author: CaffeineMC
@@ -1158,7 +1390,6 @@ Type: Mod
 License: Polyform Shield 1.0.0
 Purpose in Pack: Greatly improve performance. Specific version will be used to ensure compatibility with Voxy, Colorwheel, and more.
 Status: Added
-*On Version 0.9.1 until Voxy shifts its support to newer versions*
 
 [Lithium](https://modrinth.com/mod/lithium)
 Author: CaffeineMC
@@ -1173,6 +1404,13 @@ Type: Mod
 License: LGPL-3.0-or-later
 Purpose in Pack: Provide further conditional performance boosts on top of Sodium and Iris.
 Status: Added
+
+[Better Block Entities](https://modrinth.com/mod/better-block-entities)
+Author: cseden, Adre278
+Type: Mod
+License: LGPL-3.0-or-later
+Purpose in Pack: Greatly improve the performance of block entities.
+Status: HOLD
 
 [Gnetum](https://modrinth.com/mod/gnetum)
 Author: decce6
@@ -1195,6 +1433,13 @@ License: MIT
 Purpose in Pack: Improve memory usage.
 Status: Added
 
+[ServerCore](https://modrinth.com/mod/servercore)
+Author: Wesley1808
+Type: Mod
+License: MIT
+Purpose in Pack: Introduce some patches and optimisations that don't affect gameplay by default.
+Status: Added
+
 [Sodium Leaf Culling - Unofficial](https://modrinth.com/mod/sodiumleafculling-unofficial)
 Author: pepe\_yu
 Type: Mod
@@ -1207,7 +1452,7 @@ Author: Reverie Projects, ZenXArch
 Type: Mod
 License: MPL-2.0
 Purpose in Pack: Slight improvements to chunk generation speed, with Vanilla and Modded worldgen parity.
-Status: Added
+Status: Added (on hold for incompatibility with Toroidal World)
 
 [C2ME](https://modrinth.com/mod/c2me-fabric)
 Author: ishland, duplexsystem
@@ -1273,6 +1518,13 @@ License: MIT
 Purpose in Pack: Improve processing of redstone wire. Feel free to remove/disable if you have issues with locationality.
 Status: Added
 
+[XP Stream](https://modrinth.com/mod/xp-stream)
+Author: Jed-Tech
+Type: Mod
+License: CC-BY-NC-ND-4.0
+Purpose in Pack: Improve the performance of large amounts of XP by letting the player absorb as much as fast as possible.
+Status: Added
+
 #### **Utility/Information**
 
 [Mod Menu](https://modrinth.com/mod/modmenu)
@@ -1280,6 +1532,13 @@ Author: Terraformers
 Type: Mod
 License: MIT
 Purpose in Pack: Allow configuration of mods from in-game.
+Status: Added
+
+[Starter Items, Messages, and Commands](https://modrinth.com/mod/starter-items)
+Author: spoorn
+Type: Mod
+License: LGPL-3.0-only
+Purpose in Pack: Enable certain commands to be run on world start.
 Status: Added
 
 [Crash Assistant](https://modrinth.com/mod/crash-assistant)
@@ -1361,21 +1620,6 @@ Type: Mod
 License: ARR
 Purpose in Pack: Remove the 'Experimental Settings' warning
 Status: Added
-#### **Game Tweaking**
-
-[Featurify](https://modrinth.com/mod/featurify)
-Author: faboslav
-Type: Mod
-License: CC BY NC ND 4.0
-Purpose in Pack: Mainly to remove random pockets of lava in the Nether.
-Status: Planned
-
-[Structurify](https://modrinth.com/mod/structurify)
-Author: faboslav
-Type: Mod
-License: CC BY NC ND 4.0
-Purpose in Pack: Tweak the rarity, placement, and distribution of structures as required. This can encourage villages to spawn on flatter terrain, for example.
-Status: Planned
 
 #### **Bug Fixes**
 
@@ -1398,6 +1642,13 @@ Author: Apollo
 Type: Mod
 License: MIT
 Purpose in Pack: Fix steep surface condition, generation of snow on and under trees, among other things
+Status: Added
+
+[NetherPortalFix](https://modrinth.com/mod/netherportalfix)
+Author: BlayTheNinth
+Type: Mod
+License: ARR
+Purpose in Pack: Fix the weird thing where you can go in one nether portal and come out another.
 Status: Added
 
 ## Will Not Include
@@ -1434,18 +1685,3 @@ They flow upstream sadly
 
 [Fast Surface](https://modrinth.com/mod/zfastsurface)
 Has some conflict with ModernFix
-
-## Extra Credits
-*I didn't end up using these things, or assets from these things, in the modpack, but I used them for reference, or wanted to give shoutouts...!*
-
-https://modrinth.com/resourcepack/ashen-trinkets-support
-For guidance/reference on how to customise the trinket slots
-
-https://modrinth.com/resourcepack/create-style-interface
-I used this style/palette as guidance/reference for some more textures to keep everything organised :)
-
-https://modrinth.com/resourcepack/dark-coffe-gui
-For guidance/reference on how to get GUI resource packs to work properly on 26.2
-
-https://modrinth.com/resourcepack/elytra-slot-retexture
-For the idea more than anything :)
