@@ -1,10 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-10-03T10:38:38.393+09:30"}
+{"dg-publish":true,"permalink":"/Profile/","hide":true,"dgShowInlineTitle":true,"created":"2026-09-10T20:16:51.892+09:30","updated":"2026-10-06T16:30:38.954+10:30"}
 ---
 
 # Welcome
 
 Hello! You've made it to my online profile. This website is a collection of my various skills and fields of experience, with links to my works across the internet.
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/jordan-watt-466095285/)!
 
 - [[Profile#Team Work and Management\|Team Work and Management]]
 - [[Profile#IT Skills and Support\|IT Skills and Support]]
