@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-10-04T14:59:06.317+10:30"}
+{"dg-publish":true,"permalink":"/Create Lemonade/","dgShowToc":true,"created":"2026-08-04T07:52:07.603+09:30","updated":"2026-10-09T14:41:39.495+10:30"}
 ---
 
 Welcome to my main working document! Information relevant to actually playing the pack is stored in the in-game wiki (accessible via the pause menu). This document has the full credits, my workings, a shader breakdown, and some easily-changed performance settings if you aren't getting enough FPS!
-# Shaders and Performance Settings
+# Shaders, Performance and Other Settings
 
 #### **Shaders**
 
@@ -29,20 +29,26 @@ Not to mention that this benchmark was done a while ago so the FPS should be imp
 61 FPS
 ![complementary.png|720](/img/user/Attachments/complementary.png)
 
-#### **Performance Settings**
+#### **Performance and Other Settings**
 
-Here's some of the most performane-costly settings that are on by default in the pack that you might want to disable!
+**Quick Settings**
+*Glowing Ores:* Go to Resource Packs, find 'Glowix' in the activated packs, and click the settings icon to the right when you hover it.
+
+*No Spider Mode:* Go to Resource Packs, find 'Arachnophobia Mode' on the left, and enable it.
+
+**Performance Settings**
+
+Here's some of the most performance-costly settings that are on by default in the pack that you might want to disable!
 If you're unsure what's causing the lag, open your Task Manager (or equivalent) and see what's being used the most - your GPU or your CPU. Settings are sorted here per what they effect the most.
 
-**CPU**
+-- CPU --
 *C2ME*: If you have a cheap or old computer, and/or a CPU with not many threads, removing this mod may improve your frame stability when generating new chunks. Make sure to remove C2ME's OpenCL Engine as well if you do this.
 
-**GPU**
+-- GPU --
 *Rainbow's Foliage:* Disable this resource pack to improve FPS in very leafy areas.
 *Interactive Foliage:* Go to 'Mod Configs' in the pause menu and turn off 'waving leaves' to improve FPS in leafy areas. Optionally disable it entirely.
-# Workings
 
-these fps benchmarks are on 10RD because LOD mods haven't really settled yet, the pack looks great on as low as 3 RD once you have those set up tbh
+# Workings
 
 **it's rebuild time**
 disabling everything and working up from scratch. will stick things with a checkmark as i go. :LiBadgeCheck:
@@ -55,24 +61,35 @@ sounds :LiBadgeCheck:
 general rendering setup :LiBadgeCheck:
 overlays etc :LiBadgeCheck: (didn't impact FPS very much at all yay!)
 **foliage** :LiStarHalf:
-	rainbow's foliage isn't supported by most leaf culling mods, i've set it up in a way that at least keeps some FPS in heavy scenes, but it does look kinda bad, we're just waiting to see what comes out in the next few weeks, stuff is in the works that might help.)
-	leaf-heavy scene benchmark before mods: 440
-	after mods: 330
+	also waiting on a fix from interactive foliage for a leaf shading issue. wavy leaves is staying off for now.
+	leaf-heavy scene benchmark at 10RD: 440
+particles :LiBadgeCheck:
+animations :LiBadgeCheck:
+mobs :LiBadgeCheck:
+item :LiBadgeCheck:
+blocks :LiBadgeCheck:
+create aesthetic section :LiBadgeCheck:
+'other' aesthetic section :LiBadgeCheck:
+LOD mods :LiBadgeCheck: (FPS sits at about 250 with Voxy RD set to 512 and vanilla RD at 5. And subdivision size at 164. These can all be tweaked for more performance, by lowering the RDs and/or raising the subdivision size.)
+create actually :LiBadgeCheck: 
+world generation :LiStarHalf:(performs fine, albeit I tested without LOD mods on, I'm just waiting for more streams reflowing bugs to be patched)
+emission shading lighting :LiBadgeCheck:
+shaders :LiBadgeCheck: (i've been testing as i go, will probably need to revisit at some point though)
+balance :LiBadgeCheck:
+QoL :LiBadgeCheck:
+minor additional content
 
-*keep an eye on: worldgen patches + dh seedgen + toroidal...*
-i might want to give the worldgen/LOD side of things some time to shake down before i commit to anything tbh. meridian or even voxy would be so much nicer to run than DH (so slow... and ugly...)
+im starting to think i fixed the performance issue somewhere along the way without realising, that or it's related to LOD mods.
 
-**mob stuff**
-i'm unsure what to do about nether mobs because there's no sky there and they feel a bit unavoidable.
-same curiosity about illagers and elder guardians tbh
-i dont even know what the nautilus or zombie nautilus do
-should do something to phantoms
-i'll revisit this list in testing scenarios and really think about it later. dont forget we can change their attributes too.
-i've dropped the mob cap, i may drop it even more, its just unfair for you to get overwhelmed by 70 fucking mobs and the pack is meant to operate on low RD so
-i'll tweak it as i play lowkey
 
-**world gen waiting**
-regardless of if we use toroidal or not, i might want to run my seed search again for a smaller radius, it just feels a bit much at the moment. something that matches toroidal's max size, which is 4096 iirc
+**here's to monitoring the state of things:**
+	- voxy doesn't work with shaders on 1.11.4 iris, which forces a downgrade, which brings interactive foliage into an unusable state. it also doesn't render far beacon beams.
+	- DH meanwhile has issues with biome colour (still) and does have poorer framerates and a generally poorer look.
+	- meridian isn't even released yet; but it struggles to work correctly with shaders
+	- all of them piss me off rn but i want to be able to check compatability moving forwards... ugh. i guess i'll downgrade interactive foliage and... but ugh!!!
+	- no, i think i'll turn them all off in the meantime.
+
+**it'd be so cool to have custom villager noises based on type but idk if its doable yknow**
 
 https://github.com/Apollounknowndev/wikiful/wiki wikiful documentation
 #### To-do/In Progress
@@ -82,21 +99,31 @@ https://github.com/Apollounknowndev/wikiful/wiki wikiful documentation
 - [ ] more enchanting achievements may be in order..? though i think the structure is straight forwards enough right now. story/enchant_item <- enchant an item (good parent)
 - [ ] maybe craftable trident with create's big crafter since they're so annoying to get for something kinda mid; or make it a guarantee drop
 - [ ] I want to implement something similar to a Villager Trade Rebalance, but with respect for Enchancement's custom enchantments and the lack of tool durability (ergo no need for unbreaking or mending). TL:DR Biome based villager trades. encourages exploration at least before making a trading hall lmao
+- [ ] regardless of if we use toroidal or not, i might want to run my seed search again for a smaller radius, it just feels a bit much at the moment. something that matches toroidal's max size, which is 4096 iirc
+- [ ] i'm unsure what to do about nether mobs because there's no sky there and they feel a bit unavoidable. same curiosity about illagers and elder guardians tbh i dont even know what the nautilus or zombie nautilus do. should do something to phantoms
 
 **In Game**
 - [ ] figure out all the automatable and renewability matrices
 - [ ] idk why block replacement isnt working bro
 - [ ] why does getting a wikiful tip prompt a copper chain stonecutter recipe popup? related to error in logs perhaps.
+- [ ] figure out if my jei hotfix respack thing worked or now
+- [ ] keep working on whatever happened to the create things in jei.
+- [ ] spin up a test instance with just voxy seedgen and go find a ocean monument, does it sit on top of the water? if so report bug if not why the fuck does it do that in the pack
+- [ ] why are complementary's clouds so low lmao
+
 **Between Loads**
+- [ ] Refactor the QoL, Balance, and Minor Additional categories once I'm done with my testing
 - [ ] why cant i diddle the god damn fog
+- [ ] get snow overlays to work on top slabs at the very least
 - [x] add 'adult zombies only', '-----------', 'made by sniffercraft34', 'click to enable' 'click to disable' to the chat blocking
 - [ ] look through the logs for issues and tackle one by one :)
 - [ ] debate adding BBE anyway, despite the chest shading issues
 - [ ] make [superior smelting](https://modrinth.com/datapack/superior-smelting) and [blasting plus](https://modrinth.com/datapack/blasting-plus) and [smoking plus](https://modrinth.com/datapack/smoking-plus) recipes work in create ([guide](https://github.com/Creators-of-Create/Create/wiki/Custom-Recipes))
 - [ ] mark clifftree's sky biomes in biome spreader's no touchies config entry
 - [ ] the snow golem's shaved head face is broken??
-- [ ] grass break particle is dirt
+- [x] grass break particle is dirt
 - [x] ban baby zombies. they're bullshit and i can't be arsed making the textures for them.
+- [ ] completely delete copper horse armour its too confusing with the create pack on
 - [ ] Add the thing into the datapack to make ruined portals surface always
 - [ ] search for 'planned' and HOLD and implement or update entries, periodically.
 - [ ] add axiom, make a creative building guide wiki page
@@ -110,7 +137,11 @@ https://github.com/Apollounknowndev/wikiful/wiki wikiful documentation
 - [ ] check for unused configs, caches, etc, and bin them.
 #### Waiting for help
 
-cull leaves for rainbow's foliage please please [please](https://github.com/TeamMidnightDust/CullLeaves/issues/77)
+snowy leaves broke, waiting on help
+
+polytone fix REI/JEI black create block issue [here](https://discord.com/channels/790151253144895508/1557581632129732689)
+
+voxy to fix its [modern iris/sodium stack incompatibility](https://github.com/MCRcortex/voxy/issues/675)
 
 create fly makes enchancement's burrowing crash ([here](https://github.com/ZurrTum/Create-Fly/issues/303)) if this is resolved i can take burrowing off of the blacklist. for now, efficiency is there instead. For completeness, I'm disabling all multi-block-breaking enchantments as that seems to be the root of the issue.
 
@@ -123,8 +154,6 @@ waiting for interactive foliage to blacklist lichen [here](https://github.com/Ka
 waiting for photon to fix their [player brightness issue](https://github.com/sixthsurge/photon/issues/671)
 
 Waiting for mellow shader to push their [weird fog issue](https://codeberg.org/TheCMK/mellow-shader/issues/232) fix to a release augh i love them so much mwah mwah mwah
-
-DH + toroidal stack is nearly complete, and i lowkey just have to wait for update push and DH to look into leaf colouring...
 
 https://github.com/Qendolin/better-clouds/issues/386
 
@@ -213,6 +242,12 @@ I've made it so that Ruined Portals never spawn underground, effectively doublin
 I want some more structures maybe? But almost all of the mods are doing way too much
 #### Gameplay
 
+https://modrinth.com/mod/create-display-regex/gallery
+not sure if its chinese when you load it
+
+https://modrinth.com/mod/create-fly-recipe-viewer/gallery
+do create fly recipes really not show in jei? they do but... look bad. mm
+
 afaik there's no way to automatically set up a creative copy of a world, the best i could do is write wiki instructions on how to get started and then have some advancements that only trigger once you're in creative mode to explain the rest.
 
 good leaf decay mod
@@ -240,6 +275,45 @@ definitely that thing that smartly compacts logs
 https://modrinth.com/mod/log-cleaner thats a start
 https://modrinth.com/mod/asynclogger not close, but still probably worth
 #### graphics
+
+more paintings would be cool
+
+cloud respacks
+https://modrinth.com/resourcepack/fluffy-fancy-clouds
+
+'shader' respacks
+https://modrinth.com/resourcepack/rey-shaders
+https://modrinth.com/resourcepack/rsrp/gallery
+https://modrinth.com/resourcepack/nexus-shaders/gallery no way it works
+https://modrinth.com/resourcepack/outlines-contours, https://modrinth.com/resourcepack/light-outlinethe outline ones. maybe try to port. first one looks lowkey bad but thats ok. second one might actually work
+https://modrinth.com/mod/cinematic-villa description scares me
+https://modrinth.com/resourcepack/chunk-tweaks funi
+https://modrinth.com/resourcepack/realistic-night-vision sick
+https://modrinth.com/resourcepack/atmospheric-er-atmosphere/gallery inchresting
+https://modrinth.com/resourcepack/no-shade-%2B-fps-boost similar to shadify
+https://modrinth.com/resourcepack/blush/gallery pls
+https://modrinth.com/resourcepack/neoshade/gallery they might be cooking
+https://modrinth.com/shader/energy-shaders-java
+https://modrinth.com/resourcepack/colored-lights-plus
+https://modrinth.com/resourcepack/hue-shift-shading apparently works
+https://modrinth.com/resourcepack/notvisuals try
+https://modrinth.com/resourcepack/fast-gateway/gallery lmao what
+
+https://modrinth.com/resourcepack/leaves-and-niddles might work
+
+https://modrinth.com/resourcepack/vibrant-fog/gallery recommended to use with DH
+
+ore shine animation that isnt emissive by default (sexy) no create
+https://modrinth.com/resourcepack/spryzeens-ore-glint
+
+emissive particles test if needed prolly wont work on modded particles
+https://modrinth.com/resourcepack/emissive%2Bparticles
+
+makes stuff shiny probably quite not performant tho no clue shader compat
+https://modrinth.com/resourcepack/blooming-blocks/gallery
+
+https://modrinth.com/resourcepack/enchantment-glint-normalization
+crazy that this is even needed
 
 punchy/hyper punchy
 i'm just unsure how it'll feel. will probably need create skyhook compat whatever whatever
@@ -281,7 +355,7 @@ Crediting:
 The relevant link, author, license, and current state of inclusion in this pack are also noted.
 For more information on licenses, see [here](https://modpack-dev-knowledgebase.github.io/modpack-dev-wiki/wiki/info/licenses/) and [here](https://www.tldrlegal.com/). Note that even ARR-licensed projects hosted on Modrinth waive their right to exclusion from modpacks per [Modrinth's Terms of Use](https://modrinth.com/legal/terms), but I will respect explicit requests for exclusion or removal where present. Please [[Contact Me\|contact me]] if you want to discuss how your work is included in this pack, or if I've made any mistakes.
 
-Please note: This modpack is distributed with a built-in resource pack that duplicates and reorganises many assets found in other resource packs. This pack will not be distributed outside of this modpack, and all rights go to the original texture owners. Textures are not heavily modified, mainly renamed and their file structures changed so that they can function correctly on 26.2. All original resource packs are still included in the pack so they will recieve proper crediting and download counts. Please reach out if you have any issues with this approach.
+Please note: This modpack is distributed with a built-in resource pack that duplicates and reorganises many assets found in other resource packs. This pack will not be distributed outside of this modpack. All original resource packs are still included in the pack so they will recieve proper crediting and download counts. Please reach out if you have any issues with this approach. Textures are not heavily modified, they are mainly renamed and their file structures changed so that they can function correctly on 26.2.
 
 As of current, I'm planning to license this pack under GPL due to the "Viral" nature of that license and my inclusion of content using it, or similar, licensing. I'm led to believe that using LGPL projects within a GPL pack is permissable via the license, but if I am wrong on that front, please contact me!
 
@@ -367,7 +441,7 @@ Status: Added
 ## QoL
 *Making things easier, making the pack work, with as few nerfs as possible*
 
-[Just Enough Recipes](https://modrinth.com/mod/jei)
+[Just Enough Items](https://modrinth.com/mod/jei)
 Author: mezz
 Type: Mod
 License: MIT
@@ -411,9 +485,9 @@ Purpose in Pack: Sub in a netherite block under a beacon instead of having to bu
 Status: Added
 
 [Enhanced Netherite Armour](https://modrinth.com/mod/enhanced-netherite-armour)
-Author: 
-Type: Resource Pack/Mod/Other
-License: MIT/Public Domain/GNU GPL/LGPL/ARR/Custom/Modpack Permission Explicitly Given
+Author: SwordfishBE
+Type: Mod
+License: AGPL-3.0-or-later
 Purpose in Pack: Gives you fire resistance when you have a full set of Netherite Armour - and it works for horse armour too (they float on lava)
 Status: Added
 
@@ -437,9 +511,9 @@ Type: Mod
 License: GPL-3.0-only
 Purpose in Pack: Allows the crafting of potions that let you change the biome in a radius, handy for builders who want to have more control over their world
 Status: Added
-*I will modify this to have some CliffTree biomes accessible as well :)*
+*Doesn't support modded biomes*
 
-[1.16.1 Ender Pearl Rates](https://modrinth.com/mod/1.16.1-ender-pearl-rates)
+[1.16.1 Ender Pearl Rates](https://modrinth.com/mod/1.16.1-ender-pearl-rates) (A.K.A. Old Pearl Bartering)
 Author: TJOAT
 Type: Mod
 License: MIT
@@ -452,7 +526,7 @@ Type: Mod
 License: ARR
 Purpose in Pack: Prompts fences, walls, glass panes, and bars to connect to more non-solid or partial blocks like banners and signs.
 Status: Added
-*Doesn't work with Create's building blocks, this is a 'better than nothing' situation*
+*Doesn't work with Create's building blocks, this is a 'better than nothing' situation. Make sure you're facing dead-on to the target block for this to work.*
 
 [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks)
 Author: YaLTeR
@@ -504,7 +578,7 @@ Purpose in Pack: Let leashes stretch more before breaking, and give led entities
 Status: Added
 *Works so well I couldn't even get a leash to break!*
 
-[Instant Portal Nether](https://modrinth.com/mod/instant-portal-nether)
+[Instant Portal Nether](https://modrinth.com/mod/instant-portal-nether) (A.K.A. Instant Nether Portal)
 Author: JeanGomez
 Type: Mod
 License: MIT
@@ -515,7 +589,7 @@ Status: Added
 Author: wendall911
 Type: Mod
 License: LGPL-3.0-or-later
-Purpose in Pack: Make days and nights a solid 20 minutes each, and lets you sleep a little earlier (per my config - this mod can do a lot more!)
+Purpose in Pack: Make days and nights a solid 20 minutes each, and lets you go to sleep a little earlier (per my config - this mod can do a lot more!)
 Status: Added
 
 [SleepWarp (Updated)](https://modrinth.com/mod/sleep-warp-updated)
@@ -524,9 +598,9 @@ Type: Mod
 License: MPL-2.0
 Purpose in Pack: Tick the game as you sleep so that furnaces process and crops grow. Watch the moon set and the sun rise. Makes sleeping take a little longer, but rewards you for it, instead of phantoms punishing you for not doing it.
 Status: Added
-## Aesthetics
+## Aesthetics :LiStarHalf:
 *Simple, stylistic flair and atmosphere, unified with the Create aesthetic.*
-#### **Menus :LiBadgeCheck:**
+#### **Menus**
 
 [Fancy Menu](https://modrinth.com/mod/fancymenu)
 Author: Keksuccino
@@ -570,6 +644,13 @@ Author: Schauweg, Riflusso
 Type: Mod
 License: LGPL-3.0-only
 Purpose in Pack: Makes moving items in inventories look smooth!
+Status: Added
+
+[Raised](https://modrinth.com/mod/raised)
+Author: yurisuika
+Type: Mod
+License: LGPL-3.0-or-later
+Purpose in Pack: Lifts the hotbar off the bottom of the screen.
 Status: Added
 
 [Fresh Hearts](https://modrinth.com/resourcepack/fresh-hearts)
@@ -636,7 +717,7 @@ Purpose in Pack: Unify the Vanilla interfaces to be Create-themed.
 Status: Added
 *Many assets required copy-pasting into the modpack's resource pack to work on 26.2. I'd like to let the original pack set the textures, but for now this is the best I can do.*
 
-[Reliable Recount](https://modrinth.com/mod/o123456789-backport)
+[Reliable Recount](https://modrinth.com/mod/o123456789-backport) (aka O123456789)
 Author: evanbones
 Type: Mod
 License: GPL-3.0-or-later
@@ -658,7 +739,7 @@ License: ARR
 Purpose in Pack: Adds a really nice font.
 Status: Added
 
-#### **Sounds :LiBadgeCheck:** 
+#### **Sounds** 
 
 [Sounds](https://modrinth.com/mod/sound)
 Author: IMB11
@@ -705,9 +786,15 @@ License: MIT
 Purpose in Pack: Make the sound engine perform better and have more capability.
 Status: Added
 
-#### **General Rendering**
+[Silence villager](https://modrinth.com/resourcepack/silence-villager)
+Author: VayLorn
+Type: Resource Pack
+License: ARR
+Purpose in Pack: Makes villagers silent aside from trading
+Status: Added
+#### **General Rendering :LiStarHalf:**
 
-##### **Setup :LiBadgeCheck:**
+##### **Setup**
 
 [Iris](https://modrinth.com/mod/iris)
 Author: coderbot, IMS
@@ -801,14 +888,6 @@ License: LGPL-3.0-only
 Purpose in Pack: Just adds little curls of wind. Very charming.
 Status: Added
 
-[Wakes](https://modrinth.com/mod/wakes)
-Author: Goby56
-Type: Mod
-License: GPL-3.0-only
-Purpose in Pack: Add neat wakes to water when interacted with
-Status: HOLD
-*Has breaking incompatibility with FancyMenu...*
-
 [Particle Effects](https://modrinth.com/mod/particle-effects)
 Author: K-TEAM, KlashRaick, LopyMine
 Type: Mod
@@ -827,7 +906,7 @@ Status: Added
 
 [Fresh Animations](https://modrinth.com/mod/packed-packs)
 Author: FreshLX
-Type: Resource Pack/Mod/Other
+Type: Resource Pack
 License: (Custom Terms of Use) + Explicit Modpack Permission Given
 Purpose in Pack: Animate mobs in a whimsical style
 Status: Added
@@ -846,17 +925,18 @@ License: ARR
 Purpose in Pack: Animate chests, boats, and shulkers
 Status: Added
 
-[Animated Items](https://modrinth.com/resourcepack/animated-items)
-Author: palettemc
+[Animated Items (emissive)](https://modrinth.com/resourcepack/animated-item-textures)
+Author: shivaklans
 Type: Resource Pack
-License: CC-BY-NC-4.0
-Purpose in Pack: Add some fun animations to various items in the inventory.
+License: ARR
+Purpose in Pack: Animate some inventory items
 Status: Added
+*Note: emission isn't working, I'll come back and look at that later*
 ##### **Emission, Shading and Lighting**
 
 [Fresh Animations: Emissive](https://modrinth.com/resourcepack/fresh-animations-emissive)
 Author: FreshLX
-Type: Resource Pack/Mod/Other
+Type: Resource Pack
 License: (Custom Terms of Use) + Explicit Modpack Permission Given
 Purpose in Pack: Add glowing textures to some mobs
 Status: Added
@@ -865,7 +945,7 @@ Status: Added
 Author: LambdAurora
 Type: Mod
 License: Lambda License
-Purpose in Pack: Make glowing blocks cast light around them
+Purpose in Pack: Make glowing things cast light around them
 Status: Added
 
 [Glowix](https://modrinth.com/resourcepack/glowix)
@@ -876,7 +956,7 @@ Purpose in Pack: Add emission to some blocks
 Status: Added
 *Glowing ores are off by default - turn them on if you prefer that!*
 
-##### **Overlays Etc :LiBadgeCheck:**
+##### **Overlays Etc**
 
 [Overlay's](https://modrinth.com/resourcepack/overlays)
 Author: itzSandw
@@ -1095,7 +1175,7 @@ Status: Added
 Author: 2DWisp
 Type: Resource Pack
 License: ARR
-Purpose in Pack: Add cute flowers to grass and similar blocks
+Purpose in Pack: Add cute flowers to grass and similar blocks.
 Status: Added
 
 [Fast Better Grass](https://modrinth.com/resourcepack/fast-better-grass)
@@ -1130,21 +1210,21 @@ Status: Added
 Author: witheredwasabi
 Type: Resource Pack
 License: ARR
-Purpose in Pack: Improve lilypads
+Purpose in Pack: Improve lilypads.
 Status: Added
 
 [Golden Sunflowers](https://modrinth.com/resourcepack/golden-sunflowers)
 Author: DenSlendyY
 Type: Resource Pack
 License: ARR
-Purpose in Pack: Make sunflowers look huge and golden
+Purpose in Pack: Make sunflowers look huge and golden.
 Status: Added
 
 [Val's Leaf Litter](https://modrinth.com/resourcepack/vals-leaf-litter)
 Author: legovideosrock
 Type: Resource Pack
 License: ARR
-Purpose in Pack: Make leaf litter less obviously tiled
+Purpose in Pack: Make leaf litter less obviously tiled.
 Status: Added
 *Disable this if you're the kind of legend who uses leaf litter for floor boundary patterns*
 
@@ -1152,16 +1232,16 @@ Status: Added
 Author: Kart0, RazorPlay01
 Type: Mod
 License: ARR
-Purpose in Pack: Make leaves and grass wave in the wind, along with moving when entities interact with them
+Purpose in Pack: Make leaves and grass wave in the wind, along with moving when entities interact with them.
 Status: Added
-##### **Create**
 
-[Create Ultra](https://modrinth.com/resourcepack/create-ultra-pbr)
-Author: MrUltra
+[Os's Variated Glow Lichen](https://modrinth.com/resourcepack/os-variated-glow-lichen)
+Author: Oslypsis
 Type: Resource Pack
 License: ARR
-Purpose in Pack: LabPBR for Create, particularly for Complementary/Euphoria Patches
+Purpose in Pack: Make glow lichen look way cooler.
 Status: Added
+##### **Create**
 
 [Redstone Link Fix](https://modrinth.com/resourcepack/create-fixed-redstone-links)
 Author: CharmDragon
@@ -1199,7 +1279,7 @@ Author: Saroscesch
 Type: Mod
 License: ARR
 Purpose in Pack: Enable more customisation of the world border
-Status: HOLD (may not need)
+Status: Added
 
 [3D Skin Layers](https://modrinth.com/datapack/low-end-gravity)
 Author: tr7zw
@@ -1217,9 +1297,9 @@ Status: Added, may be tweaked/re-downloaded in future
 *Will be loaded low to avoid compatability issues - it just does so much!*
 
 [Vanilla Experience+](https://modrinth.com/resourcepack/vanilla-exp)
-Author: 
-Type: Resource Pack/Mod/Other
-License: MIT/Public Domain/GNU GPL/LGPL/ARR/Custom/Modpack Permission Explicitly Given
+Author: Kryqu
+Type: Resource Pack
+License: ARR
 Purpose in Pack: Improve a few things like walls, items, and round logs
 Status: Added
 *Will be loaded low and have many features disabled via the config to just keep the best things for this pack!*
@@ -1237,13 +1317,6 @@ Type: Resource Pack
 License: CC-BY-NC-SA-4.0
 Purpose in Pack: Make the sun and moon look cooler :)
 Status: Added
-
-[Better Clouds](https://modrinth.com/mod/better-clouds)
-Author: qendolin
-Type: Mod
-License: MPL-2.0
-Purpose in Pack: Improve the look of clouds by making them dynamic and fluffy whilst still keeping a blocky style.
-Status: HOLD (sort of buggy atm)
 
 [Cosmos](https://modrinth.com/mod/cosmos-mod)
 Author: Hollowed, TheTyphothanian
@@ -1268,39 +1341,69 @@ Status: Added
 
 #### **Shaders**
 Boring disclaimer
-	*Due to the absence of Colorwheel for 26.2, shaders won't fully integrate Create contraptions into their shadows and lights. If Colorwheel does release for 26.2, Mellow should work by default, but I can't say how well Photon will move over*
+	*Due to the absence of Colorwheel for 26.2, shaders won't fully integrate Create contraptions into their shadows and lights. If Colorwheel does release for 26.2, Mellow should work by default, but I can't say how well Photon will move over.*
 
 [Photon](https://modrinth.com/shader/photon-shader)
 Author: sixthsurge
 Type: Shader
 License: none...?
-Purpose in Pack: A balance of performance and good visuals
+Purpose in Pack: A balance of performance and good visuals.
 Status: Added
 
 [Mellow](https://modrinth.com/shader/mellow)
 Author: TheCMK
 Type: Shader
 License: MIT
-Purpose in Pack: Provide super performant and nice visuals
+Purpose in Pack: Provide super performant and nice visuals.
+Status: Added
+
+[Complementary Shaders](https://modrinth.com/shader/complementary-reimagined)
+Author: EminGT
+Type: Shader
+License: [Custom](https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/main/License.txt) + Modpack Permission Explicitely Granted
+Purpose in Pack: A heavier option for those with stronger PCs.
+Status: Added
+*Note: Complementary is not selected by default, ergo per their license does not need a specific credit in the front-matter description of the pack.*
+
+[Euphoria Patches](https://modrinth.com/mod/euphoria-patches)
+Author: SpacEagle17
+Type: Mod
+License: MPL2.0
+Purpose in Pack: Expand on Complementary's options and features.
 Status: Added
 #### **LOD mods**
-*At the moment, I'm waiting for mods to release/compatibilities to settle between various mods, before implementing any of these.*
+*At the moment, many alternative options are in the works, but this is what I'm going with for now, it may change.*
 
 [Voxy](https://modrinth.com/mod/voxy)
 Author: cortex
 Type: Mod
 License: ARR + Modpack Permission Explicitly Given
 Purpose in Pack: Enable ridiculously long view distances with minimal performance impact.
-Status: HOLD in favour of:
-*Note: Requires 1 lower version of Iris to run, should probably try dropping back a version and see if that fixes the leaf colours*
+Status: Added
+*Note: Requires 1 lower version of Iris to run*
 
-[Distant Horizons](https://modrinth.com/mod/distanthorizons)
-Author: jeseibel and many more!
+Voxy Seedgen
+Author: 
+Type: Mod
+License: ARR
+Purpose in Pack: Allow Voxy to generate distant terrain at a fraction of the usual cost.
+Status: Added
+*Note: waiting on modrinth release for proper integration.*
+
+[Voxy Extra](https://modrinth.com/mod/voxy-extra)
+Author: ImGRUI
 Type: Mod
 License: LGPL-3.0-only
-Purpose in Pack: Enable long view distances
+Purpose in Pack: Really to fix a fog draw distance bug.
 Status: Added
-## World Generation
+
+[Voxy Seam Fix](https://modrinth.com/mod/voxy-seam-fix)
+Author: DunneWortel
+Type: Mod
+License: ARR
+Purpose in Pack: Fix the gaps in water in Voxy.
+Status: Added
+## World Generation :LiStarHalf:
 
 Custom Seed Filter (link pending Modrinth approval)
 Author: Leclowndu
@@ -1317,14 +1420,14 @@ Status: Added
 A huge thanks to Leclowndu for making this mod for me!
 
 *Information about seed filtering*
-	Using a [fork](https://github.com/SunnySlopes/cubiomes-viewer) of Cubiomes, I searched for seeds with all of the following features within 5120 blocks in any direction:
-	- All (vanilla) village types
-	- At least one Mansion
-	- At least 20% area covered by snowy, desert/badland, 'cold', and 'lukewarm' biomes, for good distribution
-	- At least 2% area with -0.75 erosion to ensure at least one very tall mountain i.e 180 blocks and up
+	Using a [fork](https://github.com/SunnySlopes/cubiomes-viewer) of Cubiomes, I searched for seeds with all of the following features within 4096 blocks in each direction:
+	- A Woodland Mansion (Legit mansions are very rare and were slowing down the search, so instead my pack places them in a way where you shouldn't run into more than a few in any given world, but you *should* get at least one! Shout out to MCSR for introducing me to nether structure quad placement graphs which gave me the idea of how to do this.)
+	- Better balanced climates with roughly 15% coverage of each climate zone
+	- At least one very tall mountain i.e 180 blocks and up, ensured by a 1.5% area with -0.75 erosion
 	- Particular rare or required biomes: Bamboo Jungle, Cherry Grove, Eroded Badlands, Flower Forest, Ice Spikes, Mangrove Swamp, Meadow, Mushroom Fields, Old Growth Birch Forest, Pale Garden, and Sunflower Plains
-	- Mushroom Fields and Pale Garden needed to take up 0.02% of world space - an attempt to make sure they are of reasonable size, though there can still be many small instances
-	The search doesn't reflect changes made by mods. I suspect these will play nice with CliffTree as it's quite responsive to the world seed.
+	- Cherry Grove and Mushroom Fields have a minimum size requirement
+	- At least one Desert Pyramid
+	The search doesn't fully reflect the changes made by mods, but CliffTree generally respects the world seed, and makes some rare biomes like Cherry Groves larger, so I don't suspect there to be issues.
 
 [CliffTree](https://modrinth.com/datapack/clifftree)
 Author: Penumbra
@@ -1352,7 +1455,8 @@ Author: nice.john aka. noodles
 Type: Mod
 License: ARR
 Purpose in Pack: Add differing-height lakes and flowing streams and rivers.
-Status: Added
+Status: HOLD
+*It's just a bit unreliable and buggy in its current state... if it still is by the time it comes to pack release, I'll mention it as a recommended optional addition since the concept is so cool.*
 
 [Landmarks](https://modrinth.com/mod/landmarks)
 Author: orlouge
@@ -1368,7 +1472,6 @@ Type: Mod
 License: MIT
 Purpose in Pack: Make surface lava lakes look much better.
 Status: Added
-*I tried to confirm this was working, but couldn't find a surface lava pool, oh well*
 
 ## Minor Additional Content
 
@@ -1465,7 +1568,7 @@ License: ARR
 Purpose in Pack: Adds a button to peacefully dismiss the Wandering Trader.
 Status: Added
 
-[Proper Pet Teleport](https://modrinth.com/mod/ppetp)
+[Proper Pet Teleport](https://modrinth.com/mod/ppetp) A.K.A PPeTP
 Author: TheEpicBlock
 Type: Mod
 License: LGPL-3.0-or-later
@@ -1506,9 +1609,9 @@ Type: Mod
 License: MIT
 Purpose in Pack: Stop axolotls from killing harmless squids and fish! And lets you feed them with fish from your hand instead of just from a bucket.
 Status: Added
-## Performance/BugFixes/Utility :LiBadgeCheck:
+## Performance/BugFixes/Utility
 
-#### **Performance :LiBadgeCheck:**
+#### **Performance**
 *A quick benchmark with no other mods at 10 render distance gets ~1000 FPS on my 3060 mid-high range system while flying around at creative speed loading chunks. Occasionally this spiked to 1400FPS+. This is satisfactory enough for me to continue development off of this standard.
 Note 1: Some mods here use multi-threading, which may not work well on CPUs with fewer threads. Disable c2me and see if that improves things.
 Note 2: c2me OpenCL engine should fallback correctly for incompatible systems, but if you have issues with chunk generation, try disabling it entirely.*
@@ -1534,13 +1637,12 @@ License: LGPL-3.0-or-later
 Purpose in Pack: Provide further conditional performance boosts on top of Sodium and Iris.
 Status: Added
 
-[Better Block Entities](https://modrinth.com/mod/better-block-entities)
-Author: cseden, Adre278
+[Optimised Block Entities](https://modrinth.com/mod/obe)
+Author: maDU59\_
 Type: Mod
 License: LGPL-3.0-or-later
-Purpose in Pack: Greatly improve the performance of block entities.
+Purpose in Pack: Make block entities render faster
 Status: Added
-*Note: Known issue that it makes chests look darker when closed and normal when opened. Feel free to disable this if you prefer a correct look over increased performance.*
 
 [Gnetum](https://modrinth.com/mod/gnetum)
 Author: decce6
@@ -1554,7 +1656,7 @@ Author: ishland
 Type: Mod
 License: LGPL-3.0-only
 Purpose in Pack: Actually to reduce bottlenecking on new chunk generation.
-Status: Added
+Status: HOLD (it's being weird)
 
 [FerriteCore](https://modrinth.com/mod/ferrite-core)
 Author: malte0811
@@ -1570,11 +1672,11 @@ License: MIT
 Purpose in Pack: Introduce some patches and optimisations that don't affect gameplay by default.
 Status: Added
 
-[Sodium Leaf Culling - Unofficial](https://modrinth.com/mod/sodiumleafculling-unofficial)
-Author: pepe\_yu
+[More Culling](https://modrinth.com/mod/moreculling)
+Author: FX, 1Foxy2
 Type: Mod
-License: MIT
-Purpose in Pack: Unofficial port of Sodium Leaf Culling. Will be changed to the official version if it reaches 26.2 Fabric.
+License: GPL-3.0-only
+Purpose in Pack: Cull many things, mainly leaves
 Status: Added
 
 [fastnoise](https://modrinth.com/mod/zfastnoise)
@@ -1655,7 +1757,7 @@ License: LGPL-3.0-only
 Purpose in Pack: Makes logging asynchronous and therefore less impactful.
 Status: Added
 
-#### **Utility/Information :LiBadgeCheck:**
+#### **Utility/Information**
 
 [Mod Menu](https://modrinth.com/mod/modmenu)
 Author: Terraformers
@@ -1719,7 +1821,7 @@ Type: Mod
 License: GPL-3.0-only
 Purpose in Pack: Deletes old, untouched logs.
 Status: Added
-#### **Bug Fixes :LiBadgeCheck:**
+#### **Bug Fixes**
 
 [ModernFix-mVUS](https://modrinth.com/mod/modernfix-mvus)
 Author: Coredex
@@ -1752,9 +1854,6 @@ Since this modpack uses shaders by default, and this expects a Nvidia GPU, it wo
 
 [Entity Culling](https://modrinth.com/mod/entityculling)
 I've been told that the performance increases here are situational, and at times detrimental. Feel free to include it if you are making huge mob farms that are hidden behind walls; I think that's the main use case of this mod.
-
-[More Culling](https://modrinth.com/mod/moreculling)
-I'm unsure of stability and compatability with other mods in this pack. Feel free to try it yourself.
 
 [Packet Fixer](https://modrinth.com/mod/packet-fixer) and similar network stack improvements
 I don't have friends to test whether this modpack performs well in multiplayer; you're welcome to add these kinds of mods if you like.
